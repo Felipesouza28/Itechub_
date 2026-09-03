@@ -78,6 +78,7 @@ header{
 
 /* body */ 
 
+/* SEÇÃO 1 - BANNER */
 .banner{
     max-width: 100%;
     display: flex;
@@ -130,6 +131,7 @@ form input{
     background-color: transparent;
     border: none;
     font-size: 18px;
+    color: white;
 }
 
 #btn-buscar{
@@ -142,10 +144,34 @@ form input{
     font-size: 18px;
 }
 
+/* SEÇÃO 2 - Assistencias em destaque*/ 
+
+
+
+/* SEÇÃO 3 - Assistências perto de você*/ 
+
+
+
+/* SEÇÃO 4 - COMO FUNCIONA*/
+
+
+
+/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/ 
+
+
+
+/* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/ 
+
+
+
+/* SEÇÃO 7 - DICAS E ARTIGOS*/ 
+
+
+
+/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/ 
 
 
 /* footer */
-
 footer{
     background-color: #151925;
     color: #FFFFFF;
