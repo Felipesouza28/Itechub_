@@ -159,6 +159,39 @@ form input{
 /* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/ 
 
 
+#duvidas {
+
+ padding: 100px;
+ cursor: pointer;
+ font-size: 16px;
+
+ background-image:
+ linear-gradient(rgba(19, 27, 51,0.78)), url(img/img-bg-duvidas.png);
+ background-size: cover;
+ background-attachment: fixed;
+
+ color: #fff;
+}
+
+.summary {
+    font-size: 28px;
+}
+#duvidas h2{
+    font-size: 32px;
+    padding: 10px;
+
+}
+#duvidas p{
+    font-size: 22px;
+    padding: 20px 10px;
+    color: #d4def3;
+}
+details{
+    padding: 22px;
+    border: solid 1px #3870C3;
+    border-radius: 25px;
+}
+
 
 /* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/ 
 
