@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-/* Header */ 
+/* Header */
 
-header{
+header {
     height: 80px;
     background-color: #151925;
     display: flex;
@@ -14,22 +14,22 @@ header{
     padding: 10px 20px;
 }
 
-.logo{
+.logo {
     width: 130px;
     cursor: pointer;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.menu > li{
+.menu>li {
     position: relative;
 }
 
-.submenu{
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -38,30 +38,30 @@ header{
     background-color: #415386;
 }
 
-.submenu li{
+.submenu li {
     margin-bottom: 10px;
 }
 
-.dropdown:hover .submenu{
+.dropdown:hover .submenu {
     display: block;
     width: 100px;
     text-align: center;
     padding: 5px 0px;
-  }
+}
 
-.menu a{
+.menu a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #2563EB;
     transition: 0.3s;
 }
 
-.btn-entrar{
+.btn-entrar {
     background-color: #2563EB;
     border: none;
     padding: 10px;
@@ -70,44 +70,42 @@ header{
     cursor: pointer;
 }
 
-.btn-entrar:hover{
+.btn-entrar:hover {
     background-color: #415386;
     transition: 0.3s;
 }
 
 
-/* body */ 
+/* body */
 
-.banner{
+.banner {
     max-width: 100%;
     display: flex;
     padding: 12em 3em;
     align-items: center;
     background-image:
-        linear-gradient(
-            rgba(30, 27, 69, 0.5),
-            rgba(30, 27, 69, 0.5)
-        ),
+        linear-gradient(rgba(30, 27, 69, 0.5),
+            rgba(30, 27, 69, 0.5)),
         url("img/img-banner-section1.png");
     background-size: cover;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     color: #fff;
 }
 
-h1{
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 55px;
     line-height: 70px;
     margin-bottom: 20px;
 }
 
-.conteudo-banner span{
+.conteudo-banner span {
     color: #2563EB;
 }
 
-.conteudo-banner p{
+.conteudo-banner p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     line-height: 30px;
@@ -115,7 +113,7 @@ h1{
     margin-bottom: 40px;
 }
 
-form{
+form {
     width: 658px;
     margin-top: 80px;
     background-color: rgba(9, 8, 17, 0.6);
@@ -125,90 +123,108 @@ form{
     justify-content: space-between;
 }
 
-form input{
+form input {
     width: 100%;
     background-color: transparent;
     border: none;
     font-size: 18px;
 }
 
-#btn-buscar{
+#btn-buscar {
     width: 161px;
     border: none;
     background-color: #2563EB;
+
     color: white;
     padding: 10px;
     border-radius: 15px;
     font-size: 18px;
 }
-.guia{
-width: 1420px;   
-height: 423px;
-   
+/* SESSAO COMO FUNCIONA */
+.guia {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 100%;
+    background: #182b50;
+    height: 423px;
+    padding: 25px 25px 25px;
+    box-sizing: border-box;
 }
 
-.guia h1{
-     display: flex;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     font-size: 24px; 
-
+.guia h1 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.etapas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 26px;
 }
 
-.etapa{
-   display: flex;
-   width: 100vw;
-   border: solid 2px;
-   align-items: center;
-   flex-direction:row;
+.etapa {
+    background: #c5cbd5;
+    min-height: 45px;
+    padding: 8px 14px;
+    border-radius: 6px;
 
 }
-
-
+.etapa h3{
+    margin: 0 0 2px 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #168bc4;
+}
+.etapa p {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.3;
+    color: #222;
+}
 /* footer */
 
-footer{
+footer {
     background-color: #151925;
     color: #FFFFFF;
     padding: 60px 20px 10px 20px;
 }
 
-footer p{
+footer p {
     color: #FFFFFF;
     font-size: 17px;
     width: 60%;
 }
 
-.icones-sociais img{
+.icones-sociais img {
     width: 40px;
 }
 
-.duvidas-footer{
+.duvidas-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.duvidas-footer li{
+.duvidas-footer li {
     list-style: none;
     margin: 10px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.duvidas-footer p{
+.duvidas-footer p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 20px 0px;
 }
 
-.duvidas-footer h3{
+.duvidas-footer h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.direitos-footer{
+.direitos-footer {
     width: 100%;
     margin-top: 40px;
     text-align: center;
     font-size: 12px;
     color: #EDF2FD;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} 
-
+}
