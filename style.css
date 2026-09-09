@@ -161,7 +161,7 @@ form input {
 
     padding: 100px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 
     background-image:
         linear-gradient(rgba(19, 27, 51, 0.78)), url(img/img-bg-duvidas.png);
@@ -183,6 +183,7 @@ form input {
     list-style: none;
 
     position: relative;
+    font-size: 21px;
 
 }
 
@@ -232,6 +233,7 @@ summary::after {
 details[open] summary::after {
 
     transform: rotate(180deg);
+    
 
 
 }
@@ -241,14 +243,16 @@ padding: 16px 24px;
 
 }
 
+
 #duvidas h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 32px;
     padding: 10px;
 
 }
 
 #duvidas p {
-    font-size: 22px;
+    font-size: 20px;
     padding: 20px 10px;
     color: #d4def3;
 }
@@ -258,6 +262,7 @@ details {
     border: solid 1px #3870C3;
     border-radius: 15px;
     margin-bottom: 18px;
+     
 }
 
 
