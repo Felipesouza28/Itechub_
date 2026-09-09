@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 *{
     margin: 0px;
@@ -169,14 +173,15 @@ form input{
 /* SEÇÃO 7 - DICAS E ARTIGOS*/ 
 .section_Dicas_Artigos{
     height: 600px;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #0a1b31;
+    padding: 3em;
 }
 
 #h1_Dicas_Artigos{
-    margin-left: 113px;
+
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
     font-weight: 700;
@@ -187,11 +192,10 @@ form input{
 .cards_Dicas{
     display: flex;
     align-items: center;
-    width: 100vw;
-    justify-content: center;
-    gap: 20px;
+    margin-right: 55px;
+    max-width: 100%;
     color: #fff;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 25px;
     
 }
@@ -261,16 +265,60 @@ form input{
 
 /* SEÇÃO 8 - TEM UMA ASSISTENCIA*/ 
 
+
+
 .tem_Uma_Assistencia{
-    height: 735px;
-    width: 100vw;
+    display: flex;
+    max-width: 100%;
     background-color: #1C3559;
+    color: #fff;   
+    padding: 6em 3em;
 }
 
-#h1_Tem_Uma_Assistencia{
-    text-align: center;
+.chamada_Acao{
+    align-items: center;
+    justify-content: center;
+    
 }
 
+#span_Assistencia{
+    color: #0088FF;
+}
+
+#paragrafo_Assistencia{
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#h2_Tem_Uma_Assistencia{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    font-size: 58px;
+}
+
+.tem_Uma_Assistencia img{
+    margin-right: 55px;
+    align-items: center;
+}
+
+#btn_CadastreLoja_Asistencia{
+    height: 48px;
+    width: 169px;
+    border-radius: 8px;
+    background-color: #4a83fd;
+    color: #FFFFFF;
+    margin-top: 75px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+#btn_CadastreLoja_Asistencia:hover{
+    transition: 0.5s;
+    color:rgb(238, 184, 7);  
+    
+}
 
 
 /* footer */
