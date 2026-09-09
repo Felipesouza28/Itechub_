@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-/* Header */ 
+/* Header */
 
-header{
+header {
     height: 80px;
     background-color: #151925;
     display: flex;
@@ -14,22 +14,22 @@ header{
     padding: 10px 20px;
 }
 
-.logo{
+.logo {
     width: 130px;
     cursor: pointer;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.menu > li{
+.menu>li {
     position: relative;
 }
 
-.submenu{
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -38,30 +38,30 @@ header{
     background-color: #415386;
 }
 
-.submenu li{
+.submenu li {
     margin-bottom: 10px;
 }
 
-.dropdown:hover .submenu{
+.dropdown:hover .submenu {
     display: block;
     width: 100px;
     text-align: center;
     padding: 5px 0px;
-  }
+}
 
-.menu a{
+.menu a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #2563EB;
     transition: 0.3s;
 }
 
-.btn-entrar{
+.btn-entrar {
     background-color: #2563EB;
     border: none;
     padding: 10px;
@@ -70,45 +70,43 @@ header{
     cursor: pointer;
 }
 
-.btn-entrar:hover{
+.btn-entrar:hover {
     background-color: #415386;
     transition: 0.3s;
 }
 
 
-/* body */ 
+/* body */
 
 /* SEÇÃO 1 - BANNER */
-.banner{
+.banner {
     max-width: 100%;
     display: flex;
     padding: 12em 3em;
     align-items: center;
     background-image:
-        linear-gradient(
-            rgba(30, 27, 69, 0.5),
-            rgba(30, 27, 69, 0.5)
-        ),
+        linear-gradient(rgba(30, 27, 69, 0.5),
+            rgba(30, 27, 69, 0.5)),
         url("img/img-banner-section1.png");
     background-size: cover;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     color: #fff;
 }
 
-h1{
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 55px;
     line-height: 70px;
     margin-bottom: 20px;
 }
 
-.conteudo-banner span{
+.conteudo-banner span {
     color: #2563EB;
 }
 
-.conteudo-banner p{
+.conteudo-banner p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     line-height: 30px;
@@ -116,7 +114,7 @@ h1{
     margin-bottom: 40px;
 }
 
-form{
+form {
     width: 658px;
     margin-top: 80px;
     background-color: rgba(9, 8, 17, 0.6);
@@ -126,7 +124,7 @@ form{
     justify-content: space-between;
 }
 
-form input{
+form input {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -134,7 +132,7 @@ form input{
     color: white;
 }
 
-#btn-buscar{
+#btn-buscar {
     width: 161px;
     border: none;
     background-color: #2563EB;
@@ -144,11 +142,11 @@ form input{
     font-size: 18px;
 }
 
-/* SEÇÃO 2 - Assistencias em destaque*/ 
+/* SEÇÃO 2 - Assistencias em destaque*/
 
 
 
-/* SEÇÃO 3 - Assistências perto de você*/ 
+/* SEÇÃO 3 - Assistências perto de você*/
 
 
 
@@ -156,98 +154,171 @@ form input{
 
 
 
-/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/ 
+/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/
 
 
 #duvidas {
 
- padding: 100px;
- cursor: pointer;
- font-size: 16px;
+    padding: 100px;
+    cursor: pointer;
+    font-size: 16px;
 
- background-image:
- linear-gradient(rgba(19, 27, 51,0.78)), url(img/img-bg-duvidas.png);
- background-size: cover;
- background-attachment: fixed;
+    background-image:
+        linear-gradient(rgba(19, 27, 51, 0.78)), url(img/img-bg-duvidas.png);
+    background-size: cover;
+    background-attachment: fixed;
 
- color: #fff;
+    color: #fff;
 }
 
 .summary {
-    font-size: 28px;
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0;
+
+    list-style: none;
+
+    position: relative;
+
 }
-#duvidas h2{
+
+
+
+summary::-webkit-details-marker {
+
+   
+
+}
+
+
+
+summary::after {
+    
+
+    
+    font-size: 18px;
+
+    width: 30px;
+
+    height: 30px;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+
+    border: 1px solid #3870C3;
+
+    border-radius: 8px;
+
+
+
+    margin-left: auto;
+
+    transition: transform .3s;
+}
+
+
+
+details[open] summary::after {
+
+    transform: rotate(180deg);
+
+
+}
+summary {
+
+padding: 16px 24px;
+
+}
+
+#duvidas h2 {
     font-size: 32px;
     padding: 10px;
 
 }
-#duvidas p{
+
+#duvidas p {
     font-size: 22px;
     padding: 20px 10px;
     color: #d4def3;
 }
-details{
+
+details {
     padding: 22px;
     border: solid 1px #3870C3;
-    border-radius: 25px;
+    border-radius: 15px;
+    margin-bottom: 18px;
 }
 
 
-/* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/ 
 
 
 
-/* SEÇÃO 7 - DICAS E ARTIGOS*/ 
+
+/* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/
 
 
 
-/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/ 
+/* SEÇÃO 7 - DICAS E ARTIGOS*/
+
+
+
+/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/
 
 
 /* footer */
-footer{
+footer {
     background-color: #151925;
     color: #FFFFFF;
     padding: 60px 20px 10px 20px;
 }
 
-footer p{
+footer p {
     color: #FFFFFF;
     font-size: 17px;
     width: 60%;
 }
 
-.icones-sociais img{
+.icones-sociais img {
     width: 40px;
 }
 
-.duvidas-footer{
+.duvidas-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.duvidas-footer li{
+.duvidas-footer li {
     list-style: none;
     margin: 10px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.duvidas-footer p{
+.duvidas-footer p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 20px 0px;
 }
 
-.duvidas-footer h3{
+.duvidas-footer h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.direitos-footer{
+.direitos-footer {
     width: 100%;
     margin-top: 40px;
     text-align: center;
     font-size: 12px;
     color: #EDF2FD;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} 
-
+}
