@@ -192,3 +192,100 @@ footer p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
 
+/* Seção Assis.Destaque */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+h2{
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 35px;
+    height: 50px;
+    background-color: #131B33;
+    font-size: 36px;
+}
+
+.lojas{
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-evenly;
+    background-color: #131B33;
+    color: #FFF;
+    padding-bottom: 40px;
+}
+
+div{
+    margin: 20px;
+}
+
+.info-lojas{
+    border-radius: 15px;
+    color: #e9eaeb;
+    width: 315px;
+    height: 260px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+.info-lojas div{
+    margin: 0;
+}
+.btn-perfil{
+    border-radius: 10px;
+    color: #fff;
+    height: 40px;
+    width: 260px;
+    border: none;
+    font-size: 18px ;
+}
+
+.info-lojas-roxo{
+    background-color:#2b2146;
+    border: solid 2px #61557B;
+}
+
+.btn-perfil-roxo{
+    background-color: #6e3cc7;
+}
+
+.imagem-titulo{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    
+}
+
+.local-perfil, p, h4{
+    margin: 10px 0px;
+}
+
+.info-lojas-roxoclaro{
+    background-color:#383552;
+    border: solid 2px #4B4566;
+}
+
+.btn-perfil-roxoclaro{
+    background-color: #918cc2;
+}
+
+.info-lojas-verde{
+    background-color:#183628;
+    border: solid 2px #2f5a4a;
+}
+
+.btn-perfil-verde{
+    background-color: #2e8B57;
+}
+
+.info-lojas-cinza{
+    background-color:#3e3d41;
+    border: solid 2px #757575;
+}
+
+.btn-perfil-cinza{
+    background-color: #384766;
+}
