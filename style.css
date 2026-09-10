@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -78,6 +80,7 @@ header{
 
 /* body */ 
 
+/* SEÇÃO 1 - BANNER */
 .banner{
     max-width: 100%;
     display: flex;
@@ -130,6 +133,7 @@ form input{
     background-color: transparent;
     border: none;
     font-size: 18px;
+    color: white;
 }
 
 #btn-buscar{
@@ -142,10 +146,134 @@ form input{
     font-size: 18px;
 }
 
+/* SEÇÃO 2 - Assistencias em destaque*/ 
+
+
+
+/* SEÇÃO 3 - Assistências perto de você*/ 
+
+
+
+/* SEÇÃO 4 - COMO FUNCIONA*/
+
+
+
+/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/ 
+
+
+
+/* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/ 
+
+
+
+/* SEÇÃO 7 - DICAS E ARTIGOS*/ 
+.section_Dicas_Artigos{
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a1b31;
+}
+
+#h1_Dicas_Artigos{
+    margin-left: 113px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #f1f3f8;
+    
+}
+
+.cards_Dicas{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    
+}
+
+
+.cards_Dicas_Artigos{
+    height: 320px;
+    width: 315px;
+    box-shadow: 0px 0px 14px rgb(143, 141, 141);
+    border-radius: 8px;
+    margin-top: 25px;
+    background-color: #2f437ca2;
+    
+}
+
+.cards_Dicas_Artigos:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.imagem_Artigos{
+    border-radius: 3px;
+    margin-left: 28px;
+    margin-top: 16px;
+    object-fit: cover;
+}
+
+
+.title_Card{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 8px;
+   
+}
+.link_Artigo{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #4a83fd;
+    margin-top: 5px;
+   
+}
+
+.link_Artigo2{
+    display: inline-block;
+    margin-left: 26px;
+    color: #4a83fd;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;   
+   
+}
+
+
+.link_Artigo:hover{
+    color:rgb(238, 184, 7);  
+}
+
+.link_Artigo2:hover{
+    color:rgb(238, 184, 7);  
+}
+
+
+
+
+/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/ 
+
+.tem_Uma_Assistencia{
+    height: 735px;
+    width: 100vw;
+    background-color: #1C3559;
+}
+
+#h1_Tem_Uma_Assistencia{
+    text-align: center;
+}
+
 
 
 /* footer */
-
 footer{
     background-color: #151925;
     color: #FFFFFF;
