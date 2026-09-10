@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -103,12 +103,7 @@ header{
     color: #fff;
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 55px;
-    line-height: 70px;
-    margin-bottom: 20px;
-}
+
 
 .conteudo-banner span{
     color: #2563EB;
@@ -175,28 +170,43 @@ form input{
     padding: 20px;
     background: linear-gradient(#1C3559,#071d4bd0);
 }
+
+
+.elements_Faixa_Satisfacao{
+    display: flex;
+}
+
 .faixas_de_Satisfacao{
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: #cfe5ff;
 
 }
 
+.faixas_de_Satisfacao i {
+    font-size: 50px;
+}
+.apresentacao_Satisfacao{
+    font-family: "Inter", sans-serif;
+}
+
 .chamativo_Faixa_Satisfacao{
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
 }
 
 .p_Resultado{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /* SEÇÃO 7 - DICAS E ARTIGOS*/ 
 .section_Dicas_Artigos{
-    height: 600px;
+    
     max-width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #0a1b31;
-    padding: 3em;
+    padding: 4em;
 }
 
 #h1_Dicas_Artigos{
@@ -274,11 +284,13 @@ form input{
 
 
 .link_Artigo:hover{
-    color:rgb(238, 184, 7);  
+    color:rgb(238, 184, 7); 
+    transform: scale(1.07); 
 }
 
 .link_Artigo2:hover{
     color:rgb(238, 184, 7);  
+    transform: scale(1.07); 
 }
 
 
@@ -291,7 +303,7 @@ form input{
 .tem_Uma_Assistencia{
     display: flex;
     max-width: 100%;
-    background-color: #1C3559;
+    background: linear-gradient(#1C3559,#071d4bd0);
     color: #fff;   
     padding: 6em 3em;
 }
@@ -326,19 +338,21 @@ form input{
 #btn_CadastreLoja_Asistencia{
     height: 48px;
     width: 169px;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #4a83fd;
     color: #FFFFFF;
-    margin-top: 75px;
+    margin-top: 55px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+    border: none;
     
 }
 
 #btn_CadastreLoja_Asistencia:hover{
     transition: 0.3s;
+    transform: scale(1.13);
     background: #cfe5ff;
-    color: #0a1b31;
+    color: rgb(20, 55, 129);
     
 }
 
