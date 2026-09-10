@@ -192,3 +192,441 @@ footer p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
 
+/*area elisson mapa*/
+
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* ÁREA PRINCIPAL */
+/* ============================= */
+
+.area_loja {
+    width: 100%;
+    min-height: 700px;
+
+    background-color: #151925;
+
+    padding: 35px 4% 60px;
+}
+
+
+/* ============================= */
+/* TÍTULO */
+/* ============================= */
+
+.area_loja > h2 {
+    text-align: center;
+
+    color: #ffffff;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 34px;
+
+    margin-bottom: 45px;
+}
+
+
+/* ============================= */
+/* MAPA + LISTA */
+/* ============================= */
+
+.conteudo-lojas {
+
+    max-width: 1320px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.25fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+/* ============================= */
+/* ÁREA DO MAPA */
+/* ============================= */
+
+.area_mapa {
+
+    width: 100%;
+
+    background-color: #0e1424;
+
+    border: 1px solid #415386;
+
+    border-radius: 18px;
+
+    padding: 12px;
+
+    overflow: hidden;
+}
+
+
+/* ============================= */
+/* CABEÇALHO DO MAPA */
+/* ============================= */
+
+.titulo-mapa {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 5px 3px 15px;
+}
+
+
+.titulo-mapa h3 {
+
+    color: #ffffff;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, sans-serif;
+
+    font-size: 20px;
+
+    margin-bottom: 4px;
+}
+
+
+.titulo-mapa p {
+
+    color: #777f96;
+
+    font-family: system-ui, sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* ============================= */
+/* BOTÃO LOCALIZAÇÃO */
+/* ============================= */
+
+.btn-localizacao {
+
+    background-color: #1b2335;
+
+    border: 1px solid #303b55;
+
+    border-radius: 8px;
+
+    padding: 9px 13px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-localizacao:hover {
+
+    background-color: #2563EB;
+
+    border-color: #2563EB;
+}
+
+
+/* ============================= */
+/* MAPA */
+/* ============================= */
+
+#map {
+
+    width: 200%;
+
+    height: 405px;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+}
+
+
+#map iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+    display: block;
+}
+
+
+/* ============================= */
+/* LISTA DE LOJAS */
+/* ============================= */
+
+.lista-lojas {
+
+    width: 100%;
+
+    background-color: #18233f;
+
+    border: 2px solid #415386;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+/* ============================= */
+/* CARD DA LOJA */
+/* ============================= */
+
+.loja {
+
+    min-height: 150px;
+
+    padding: 18px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    position: relative;
+
+    border-bottom: 1px solid #415386;
+
+    transition: 0.3s;
+}
+
+
+.loja:last-child {
+
+    border-bottom: none;
+}
+
+
+.loja:hover {
+
+    background-color: #202d4d;
+}
+
+
+/* ============================= */
+/* FOTO */
+/* ============================= */
+
+.foto-loja {
+
+    width: 230px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 1px solid #415386;
+
+    flex-shrink: 0;
+}
+
+
+/* ============================= */
+/* INFORMAÇÕES */
+/* ============================= */
+
+.info-loja {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+/* ============================= */
+/* NOME DA LOJA */
+/* ============================= */
+
+.titulo-loja {
+
+    color: #ffffff;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* ============================= */
+/* AVALIAÇÃO */
+/* ============================= */
+
+.avaliacao {
+
+    color: #ffff00;
+
+    font-family: system-ui, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.avaliacao span {
+
+    color: #ffffff;
+
+    margin-left: 5px;
+}
+
+
+/* ============================= */
+/* LOCALIZAÇÃO */
+/* ============================= */
+
+.localizacao {
+
+    color: #ffffff;
+
+    font-family: system-ui, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* ============================= */
+/* DISTÂNCIA */
+/* ============================= */
+
+.distancia {
+
+    color: #ffffff;
+
+    font-family: system-ui, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    min-width: 60px;
+
+    text-align: right;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 1000px) {
+
+    .conteudo-lojas {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .area_mapa {
+
+        order: 1;
+    }
+
+    .lista-lojas {
+
+        order: 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .area_loja {
+
+        padding: 30px 15px 50px;
+    }
+
+    .area_loja > h2 {
+
+        font-size: 27px;
+
+        margin-bottom: 30px;
+    }
+
+    .titulo-mapa {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    #map {
+
+        height: 350px;
+    }
+
+    .loja {
+
+        padding: 15px;
+
+        gap: 12px;
+    }
+
+    .foto-loja {
+
+        width: 100px;
+
+        height: 80px;
+    }
+
+    .titulo-loja {
+
+        font-size: 19px;
+    }
+
+    .localizacao {
+
+        font-size: 12px;
+    }
+
+    .distancia {
+
+        font-size: 16px;
+
+        min-width: 45px;
+    }
+}
