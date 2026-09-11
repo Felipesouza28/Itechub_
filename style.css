@@ -183,23 +183,12 @@ form input {
     list-style: none;
 
     position: relative;
+
     font-size: 21px;
 
 }
 
-
-
-summary::-webkit-details-marker {
-
-   
-
-}
-
-
-
 summary::after {
-    
-
     
     font-size: 18px;
 
@@ -207,21 +196,15 @@ summary::after {
 
     height: 30px;
 
-
-
     display: flex;
 
     align-items: center;
 
     justify-content: center;
 
-
-
     border: 1px solid #3870C3;
 
     border-radius: 8px;
-
-
 
     margin-left: auto;
 
@@ -234,9 +217,8 @@ details[open] summary::after {
 
     transform: rotate(180deg);
     
-
-
 }
+
 summary {
 
 padding: 16px 24px;
