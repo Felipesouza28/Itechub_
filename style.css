@@ -142,42 +142,56 @@ form input {
 }
 /* SESSAO COMO FUNCIONA */
 .guia {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Poppins', sans-serif;
     max-width: 100%;
-    background: #182b50;
+    background-image: url('img/img_Parte_ComoFunciona.png');
     height: 423px;
     padding: 25px 25px 25px;
     box-sizing: border-box;
 }
 
 .guia h1 {
+    font-family:'Poppins', sans-serif;
     margin: 0 0 12px 0;
-    font-size: 16px;
+    font-size: 42px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff; 
 }
 .etapas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px 26px;
+    gap: 40px;
+    
 }
-
+.etapa i{
+    font-size: 35px;
+    background-color: #788090;
+    font-style:normal;
+    padding: 15px;
+    border-radius: 6px;
+    
+}
 .etapa {
     background: #c5cbd5;
-    min-height: 45px;
-    padding: 8px 14px;
+    min-height: 50px;
+    padding: 10px 14px;
     border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
 
+  
 }
 .etapa h3{
     margin: 0 0 2px 0;
-    font-size: 11px;
+    font-size: 20px;
     font-weight: 600;
     color: #168bc4;
+    
 }
 .etapa p {
     margin: 0;
-    font-size: 8px;
+    font-size: 20px;
     line-height: 1.3;
     color: #222;
 }
