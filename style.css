@@ -385,23 +385,44 @@ h2{
     height: 40px;
     width: 260px;
     border: none;
-    font-size: 18px ;
+    font-size: 18px;
 }
 
 .btn-perfil-roxo{
     background-color: #6e3cc7;
 }
 
+.btn-perfil-roxo:hover{
+    background-color: #4B4566;
+    transition: 0.3s;
+}
+
+
 .btn-perfil-roxoclaro{
     background-color: #918cc2;
+}
+
+.btn-perfil-roxoclaro:hover{
+    background-color: #4B4566;
+    transition: 0.3s;
 }
 
 .btn-perfil-verde{
     background-color: #2e8B57;
 }
 
+.btn-perfil-verde:hover{
+    background-color: #2f5a4a;
+    transition: 0.3s;
+}
+
 .btn-perfil-cinza{
     background-color: #384766;
+}
+
+.btn-perfil-cinza:hover{
+    background-color: #757575;
+    transition: 0.3s;
 }
 
 /* Imagem Loja */
