@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 
 *{
@@ -103,10 +100,12 @@ header{
     color: #fff;
 }
 
-
-
 .conteudo-banner span{
     color: #2563EB;
+}
+
+h1, span{
+    font-size: 60px;
 }
 
 .conteudo-banner p{
@@ -165,7 +164,7 @@ form input{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
     background: linear-gradient(#1C3559,#071d4bd0);
 }
@@ -208,7 +207,7 @@ form input{
     padding: 4em;
 }
 
-#h1_Dicas_Artigos{
+#h2_Dicas_Artigos{
 
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
