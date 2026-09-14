@@ -263,6 +263,64 @@ details {
 /* SEÇÃO 8 - TEM UMA ASSISTENCIA*/
 
 
+
+.tem_Uma_Assistencia{
+    display: flex;
+    max-width: 100%;
+    background: linear-gradient(#1C3559,#071d4bd0);
+    color: #fff;   
+    padding: 6em 3em;
+}
+
+.chamada_Acao{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#span_Assistencia{
+    color: #0088FF;
+}
+
+#paragrafo_Assistencia{
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#h2_Tem_Uma_Assistencia{
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    font-size: 58px;
+}
+
+.tem_Uma_Assistencia img{
+    margin-right: 55px;
+    align-items: center;
+}
+
+#btn_CadastreLoja_Asistencia{
+    height: 48px;
+    width: 169px;
+    border-radius: 6px;
+    background-color: #4a83fd;
+    color: #FFFFFF;
+    margin-top: 55px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    
+}
+
+#btn_CadastreLoja_Asistencia:hover{
+    transition: 0.3s;
+    transform: scale(1.13);
+    background: #cfe5ff;
+    color: rgb(20, 55, 129);
+    
+}
+
+
 /* footer */
 footer {
     background-color: #151925;
