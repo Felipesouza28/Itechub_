@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/* Header */ 
+/* Header */
 
-header{
+header {
     height: 80px;
     background-color: #151925;
     display: flex;
@@ -17,22 +16,22 @@ header{
     padding: 10px 20px;
 }
 
-.logo{
+.logo {
     width: 130px;
     cursor: pointer;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.menu > li{
+.menu>li {
     position: relative;
 }
 
-.submenu{
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -41,30 +40,30 @@ header{
     background-color: #415386;
 }
 
-.submenu li{
+.submenu li {
     margin-bottom: 10px;
 }
 
-.dropdown:hover .submenu{
+.dropdown:hover .submenu {
     display: block;
     width: 100px;
     text-align: center;
     padding: 5px 0px;
-  }
+}
 
-.menu a{
+.menu a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #2563EB;
     transition: 0.3s;
 }
 
-.btn-entrar{
+.btn-entrar {
     background-color: #2563EB;
     border: none;
     padding: 10px;
@@ -73,30 +72,28 @@ header{
     cursor: pointer;
 }
 
-.btn-entrar:hover{
+.btn-entrar:hover {
     background-color: #415386;
     transition: 0.3s;
 }
 
 
-/* body */ 
+/* body */
 
 /* SEÇÃO 1 - BANNER */
-.banner{
+.banner {
     max-width: 100%;
     display: flex;
     padding: 12em 3em;
     align-items: center;
     background-image:
-        linear-gradient(
-            rgba(30, 27, 69, 0.5),
-            rgba(30, 27, 69, 0.5)
-        ),
+        linear-gradient(rgba(30, 27, 69, 0.5),
+            rgba(30, 27, 69, 0.5)),
         url("img/img-banner-section1.png");
     background-size: cover;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     color: #fff;
 }
 
@@ -116,7 +113,7 @@ h1, span{
     margin-bottom: 40px;
 }
 
-form{
+form {
     width: 658px;
     margin-top: 80px;
     background-color: rgba(9, 8, 17, 0.6);
@@ -126,7 +123,7 @@ form{
     justify-content: space-between;
 }
 
-form input{
+form input {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -134,7 +131,7 @@ form input{
     color: white;
 }
 
-#btn-buscar{
+#btn-buscar {
     width: 161px;
     border: none;
     background-color: #2563EB;
@@ -144,7 +141,7 @@ form input{
     font-size: 18px;
 }
 
-/* SEÇÃO 2 - Assistencias em destaque*/ 
+/* SEÇÃO 2 - Assistencias em destaque*/
 
 
 /* SEÇÃO 3 - Assistências perto de você*/ 
@@ -155,9 +152,10 @@ form input{
 
 
 
-/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/ 
+/* SEÇÃO 5 - AINDA COM ALGUMA DÚVIDA*/
 
 
+#duvidas {
 
 /* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/ 
 .section_Faixa_Satisfacao{
@@ -169,132 +167,104 @@ form input{
     background: linear-gradient(#1C3559,#071d4bd0);
 }
 
+    background-image:
+        linear-gradient(rgba(19, 27, 51, 0.78)), url(img/img-bg-duvidas.png);
+    background-size: cover;
+    background-attachment: fixed;
 
-.elements_Faixa_Satisfacao{
-    display: flex;
+    color: #fff;
 }
 
-.faixas_de_Satisfacao{
+.summary {
     display: flex;
+
+    justify-content: space-between;
+
     align-items: center;
-    gap: 12px;
-    color: #cfe5ff;
+
+    padding: 0;
+
+    list-style: none;
+
+    position: relative;
+
+    font-size: 21px;
 
 }
 
-.faixas_de_Satisfacao i {
-    font-size: 50px;
-}
-.apresentacao_Satisfacao{
-    font-family: "Inter", sans-serif;
-}
-
-.chamativo_Faixa_Satisfacao{
-    font-size: 26px;
-}
-
-.p_Resultado{
-    font-family: "Roboto", sans-serif;
-}
-
-/* SEÇÃO 7 - DICAS E ARTIGOS*/ 
-.section_Dicas_Artigos{
+summary::after {
     
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #0a1b31;
-    padding: 4em;
-}
+    font-size: 18px;
 
 #h2_Dicas_Artigos{
 
-    font-family: 'Poppins', sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    color: #f1f3f8;
-    
-}
+    height: 30px;
 
-.cards_Dicas{
     display: flex;
+
     align-items: center;
-    margin-right: 55px;
-    max-width: 100%;
-    color: #fff;
-    justify-content: space-around;
-    margin-top: 25px;
-    
-}
 
+    justify-content: center;
 
-.cards_Dicas_Artigos{
-    height: 320px;
-    width: 315px;
-    box-shadow: 0px 0px 14px rgb(143, 141, 141);
+    border: 1px solid #3870C3;
+
     border-radius: 8px;
-    margin-top: 25px;
-    background-color: #2f437ca2;
+
+    margin-left: auto;
+
+    transition: transform .3s;
+}
+
+
+
+details[open] summary::after {
+
+    transform: rotate(180deg);
     
 }
 
-.cards_Dicas_Artigos:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
+summary {
+
+padding: 16px 24px;
+
 }
 
 
-.imagem_Artigos{
-    border-radius: 3px;
-    margin-left: 28px;
-    margin-top: 16px;
-    object-fit: cover;
-}
-
-
-.title_Card{
+#duvidas h2 {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: 8px;
-   
-}
-.link_Artigo{
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    margin-left: 15px;
-    color: #4a83fd;
-    margin-top: 5px;
-    text-decoration: none;
-   
+    font-size: 32px;
+    padding: 10px;
+
 }
 
-.link_Artigo2{
-    display: inline-block;
-    margin-left: 26px;
-    color: #4a83fd;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 15px;   
-    text-decoration: none;
-   
+#duvidas p {
+    font-size: 20px;
+    padding: 20px 10px;
+    color: #d4def3;
 }
 
-
-.link_Artigo:hover{
-    color:rgb(238, 184, 7); 
-    transform: scale(1.07); 
-}
-
-.link_Artigo2:hover{
-    color:rgb(238, 184, 7);  
-    transform: scale(1.07); 
+details {
+    padding: 22px;
+    border: solid 1px #3870C3;
+    border-radius: 15px;
+    margin-bottom: 18px;
+     
 }
 
 
 
 
-/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/ 
+
+
+/* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/
+
+
+
+/* SEÇÃO 7 - DICAS E ARTIGOS*/
+
+
+
+/* SEÇÃO 8 - TEM UMA ASSISTENCIA*/
 
 
 
@@ -356,144 +326,48 @@ form input{
 
 
 /* footer */
-footer{
+footer {
     background-color: #151925;
     color: #FFFFFF;
     padding: 60px 20px 10px 20px;
 }
 
-footer p{
+footer p {
     color: #FFFFFF;
     font-size: 17px;
     width: 60%;
 }
 
-.icones-sociais img{
+.icones-sociais img {
     width: 40px;
 }
 
-.duvidas-footer{
+.duvidas-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.duvidas-footer li{
+.duvidas-footer li {
     list-style: none;
     margin: 10px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.duvidas-footer p{
+.duvidas-footer p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 20px 0px;
 }
 
-.duvidas-footer h3{
+.duvidas-footer h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.direitos-footer{
+.direitos-footer {
     width: 100%;
     margin-top: 40px;
     text-align: center;
     font-size: 12px;
     color: #EDF2FD;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} 
-
-/* Seção Assis.Destaque */
-/* Titulo */
-h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #fff;
-    padding-left: 40px;
-    padding-top: 35px;
-    height: 50px;
-    background-color: #131B33;
-    font-size: 36px;
-    padding-bottom: 40px ;
-}
-
-/* Seção Lojas */
-.lojas{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    margin-top: 0px;
-    justify-content: space-evenly;
-    background-color: #131B33;
-    color: #FFF;
-    padding-bottom: 40px;
-}
-
-/* Box Lojas */
-.info-lojas{
-    border-radius: 15px;
-    color: #e9eaeb;
-    width: 315px;
-    height: 260px;
-    padding: 25px;
-    box-sizing: border-box;
-}
-
-.info-lojas div{
-    margin: 0;
-}
-
-.info-lojas-roxo{
-    background-color:#2b2146;
-    border: solid 2px #61557B;
-}
-
-.info-lojas-roxoclaro{
-    background-color:#383552;
-    border: solid 2px #4B4566;
-}
-
-.info-lojas-verde{
-    background-color:#183628;
-    border: solid 2px #2f5a4a;
-}
-
-.info-lojas-cinza{
-    background-color:#3e3d41;
-    border: solid 2px #757575;
-}
-
-/* Botão Perfil */
-.btn-perfil{
-    border-radius: 10px;
-    color: #fff;
-    height: 40px;
-    width: 260px;
-    border: none;
-    font-size: 18px ;
-}
-
-.btn-perfil-roxo{
-    background-color: #6e3cc7;
-}
-
-.btn-perfil-roxoclaro{
-    background-color: #918cc2;
-}
-
-.btn-perfil-verde{
-    background-color: #2e8B57;
-}
-
-.btn-perfil-cinza{
-    background-color: #384766;
-}
-
-/* Imagem Loja */
-.imagem-titulo{
-    display: flex;
-    gap: 20px;
-    font-size: 18px;   
-}
-
-/* SubLinha Box */
-.local-perfil, p, h4{
-    margin: 10px 0px;
 }
