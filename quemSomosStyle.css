@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner_AreaAp{
+    background-image: url(img/fundo_AreaQuem_Somos.png);
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
