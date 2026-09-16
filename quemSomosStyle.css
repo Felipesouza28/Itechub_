@@ -1,12 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .banner_AreaAp{
-    background-image: url(img/fundo_AreaQuem_Somos.png);
-    height: 100vh;
-    background-size: cover; 
-    background-position: center;
+    background-image: url(img/fundo_AreaQuem_Somos2.png);
+    height: 57vh;
     background-repeat: no-repeat;
+    background-size: 100% auto; 
+    background-position: 50% 30%;
+
+}
+
+
+#banner_SobreNos{
+    background-color: #707aac;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 100px;
+}
+
+.conteudo_Header{
+    padding: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.azul_Uniforme_Span{
+    color: #3155FF;
+}
+
+.banner_Text{
+     margin-top: 10px;
+     color: #D5D8E8;
+     font-weight: 500;
+     font-weight: bolder;
+}
+
+#h1_Banner{
+    margin-top: 35px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#p_Banner{
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 35px;
+    max-width: 650px;
+    color: #D5D8E8;
+    font-weight: 500;
+    
+}
+#link_Banner{
+    background-color: #3155FF;
+    padding: 10px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #D5D8E8;
 }
