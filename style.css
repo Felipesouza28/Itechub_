@@ -84,7 +84,7 @@ header {
     padding: 12em 3em;
     align-items: center;
     background-image:
-        linear-gradient(rgba(30, 27, 69, 0.5),
+        linear-gradient(rgba(30, 27, 69, 0.502),
             rgba(30, 27, 69, 0.5)),
         url("img/img-banner-section1.png");
     background-size: cover;
@@ -140,58 +140,64 @@ form input {
     border-radius: 15px;
     font-size: 18px;
 }
+
+
 /* SESSAO COMO FUNCIONA */
 .guia {
     font-family:'Poppins', sans-serif;
     max-width: 100%;
-    background-image: url('img/img_Parte_ComoFunciona.png');
-    height: 423px;
-    padding: 25px 25px 25px;
+    background-image: url(img/bg-como-funciona.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em 3em;
     box-sizing: border-box;
 }
 
-.guia h1 {
-    font-family:'Poppins', sans-serif;
-    margin: 0 0 12px 0;
-    font-size: 42px;
+.guia h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    font-size: 32px;
     font-weight: 700;
     color: #ffffff; 
 }
+
 .etapas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    
 }
+
 .etapa i{
     font-size: 35px;
-    background-color: #788090;
+    background-color: rgb(21, 47, 126);
     font-style:normal;
-    padding: 15px;
-    border-radius: 6px;
-    
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: white;
 }
+
 .etapa {
     background: #c5cbd5;
-    min-height: 50px;
-    padding: 10px 14px;
+    padding: 16px 14px;
     border-radius: 6px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
-
-  
 }
+
 .etapa h3{
     margin: 0 0 2px 0;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    color: #168bc4;
+    color: #000000;
     
 }
 .etapa p {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
+    font: 500;
     line-height: 1.3;
     color: #222;
 }
