@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banner_AreaAp{
@@ -63,3 +64,22 @@
     text-decoration: none;
     color: #D5D8E8;
 }
+
+.text_SessaoHistoria{
+    padding: 10px 10px;
+    margin-left: 30px;
+    align-items: center;
+    
+}
+
+
+.sessao_Historia{
+
+    background-color: #415386;
+    color: #fff;
+}
+
+.img_Historia{
+    margin-left: 90px;
+}
+
