@@ -162,7 +162,7 @@ h2{
 .lojas{
     display: flex;
     padding-top: 2em;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Box Lojas */
@@ -330,7 +330,6 @@ details {
 }
 
 
-
 /* SEÇÃO 6 - FAIXA DE SATISFAÇÃO*/
 .section_Faixa_Satisfacao {
     display: flex;
@@ -340,7 +339,6 @@ details {
     padding: 20px;
     background: linear-gradient(#1C3559, #071d4bd0);
 }
-
 
 .elements_Faixa_Satisfacao {
     display: flex;
@@ -368,6 +366,7 @@ details {
 .p_Resultado {
     font-family: "Roboto", sans-serif;
 }
+
 
 /* SEÇÃO 7 - DICAS E ARTIGOS*/
 .section_Dicas_Artigos {
@@ -460,9 +459,6 @@ details {
     color: rgb(238, 184, 7);
     transform: scale(1.07);
 }
-
-
-
 
 /* SEÇÃO 8 - TEM UMA ASSISTENCIA*/
 
