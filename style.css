@@ -81,14 +81,13 @@ header {
 
 /* body */
 
-/* SEÇÃO 1 - BANNER */
 .banner {
     max-width: 100%;
     display: flex;
     padding: 12em 3em;
     align-items: center;
     background-image:
-        linear-gradient(rgba(30, 27, 69, 0.5),
+        linear-gradient(rgba(30, 27, 69, 0.502),
             rgba(30, 27, 69, 0.5)),
         url("img/img-banner-section1.png");
     background-size: cover;
@@ -98,8 +97,11 @@ header {
     color: #fff;
 }
 
-.conteudo-banner span {
-    color: #2563EB;
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    line-height: 70px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -137,6 +139,7 @@ form input {
     width: 161px;
     border: none;
     background-color: #2563EB;
+
     color: white;
     padding: 10px;
     border-radius: 15px;
@@ -518,7 +521,65 @@ details {
 
 }
 
+/* SESSAO COMO FUNCIONA */
+.guia {
+    font-family:'Poppins', sans-serif;
+    max-width: 100%;
+    background-image: url(img/bg-como-funciona.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em 3em;
+    box-sizing: border-box;
+}
 
+.guia h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; 
+}
+
+.etapas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.etapa i{
+    font-size: 35px;
+    background-color: rgb(21, 47, 126);
+    font-style:normal;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+.etapa {
+    background: #c5cbd5;
+    padding: 16px 14px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.etapa h3{
+    margin: 0 0 2px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    
+}
+.etapa p {
+    margin: 0;
+    font-size: 18px;
+    font: 500;
+    line-height: 1.3;
+    color: #222;
+}
 /* footer */
 footer {
     background-color: #151925;
@@ -565,3 +626,101 @@ footer p {
     color: #EDF2FD;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
+
+/* Seção Assis.Destaque */
+/* Titulo */
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 35px;
+    height: 50px;
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+/* Seção Lojas */
+.lojas {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-evenly;
+    background-color: #131B33;
+    color: #FFF;
+    padding-bottom: 40px;
+}
+
+/* Box Lojas */
+.info-lojas {
+    border-radius: 15px;
+    color: #e9eaeb;
+    width: 315px;
+    height: 260px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.info-lojas div {
+    margin: 0;
+}
+
+.info-lojas-roxo {
+    background-color: #2b2146;
+    border: solid 2px #61557B;
+}
+
+.info-lojas-roxoclaro {
+    background-color: #383552;
+    border: solid 2px #4B4566;
+}
+
+.info-lojas-verde {
+    background-color: #183628;
+    border: solid 2px #2f5a4a;
+}
+
+.info-lojas-cinza {
+    background-color: #3e3d41;
+    border: solid 2px #757575;
+}
+
+/* Botão Perfil */
+.btn-perfil {
+    border-radius: 10px;
+    color: #fff;
+    height: 40px;
+    width: 260px;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-perfil-roxo {
+    background-color: #6e3cc7;
+}
+
+.btn-perfil-roxoclaro {
+    background-color: #918cc2;
+}
+
+.btn-perfil-verde {
+    background-color: #2e8B57;
+}
+
+.btn-perfil-cinza {
+    background-color: #384766;
+}
+
+/* Imagem Loja */
+.imagem-titulo {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* SubLinha Box */
+.local-perfil,
+p,
+h4 {
+    margin: 10px 0px;
+}
+ 
