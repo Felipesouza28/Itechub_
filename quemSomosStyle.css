@@ -10,7 +10,7 @@
 
 .banner_AreaAp{
     background-image: url(img/fundo_AreaQuem_Somos2.png);
-    height: 57vh;
+    height: 55vh;
     background-repeat: no-repeat;
     background-size: 100% auto; 
     background-position: 50% 30%;
@@ -65,21 +65,61 @@
     color: #D5D8E8;
 }
 
+
+
+ <!--Sessao Historia-->
+
+.sessao_Historia{
+    height: 100%;
+}
+
 .text_SessaoHistoria{
     padding: 10px 10px;
     margin-left: 30px;
-    align-items: center;
-    
-}
-
-
-.sessao_Historia{
-
-    background-color: #415386;
+    align-items: center;  
+    margin-top: 18px;
     color: #fff;
 }
 
-.img_Historia{
+#nossaHistoria{
+    margin-bottom: 12px;
+    font-size: 30px;
+}
+#area_ImgHistoria{
     margin-left: 90px;
 }
 
+.area_SessaoHistoria{
+    display: flex;
+    background-color: #020A2D;   
+}
+
+.div_Ps{
+    font-size: 17px;
+}
+
+
+ <!--missao_Visao_Valores-->
+
+ .area_Missao_Valores{
+    display: flex;
+
+ }
+
+ .text_Missao_Valores{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+ }
+
+ #h3_missao_Visao_Valores{
+    font-size: 30px;
+ }
+
+ #spanMissao_E_AreaAjuda{color: #fff;}#spanVisao_E_AreaAjuda{color: #2D4CC8;} #span_e{color:#5B2BCF;} #span_Valores{color:#8A4DFF;}
+
+
+.missao_Visao_Valores_Section{
+    background-color:#051040;
+}
