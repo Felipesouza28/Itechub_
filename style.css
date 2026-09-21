@@ -255,6 +255,820 @@ h2 {
 /* SEÇÃO 3 - Assistências perto de você*/
 
 
+/* =========================================================
+   ITECHUB
+   ASSISTÊNCIAS PERTO DE VOCÊ
+   ========================================================= */
+
+
+/* =========================================================
+   SEÇÃO PRINCIPAL
+   ========================================================= */
+
+   .section-assistencias-proximas {
+    width: 100%;
+
+    padding: 75px 40px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(37, 99, 235, 0.08),
+            transparent 35%
+        ),
+        #0e1424;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.titulo-assistencias-proximas {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto 35px;
+}
+
+.titulo-assistencias-proximas h2 {
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.titulo-assistencias-proximas h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin-top: 14px;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+}
+
+.titulo-assistencias-proximas p {
+    margin: 12px 0 0;
+
+    color: #8f96a8;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MAPA + LISTA
+   ========================================================= */
+
+.area-assistencias {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.55fr)
+        minmax(350px, 0.75fr);
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CONTAINER DO MAPA
+   ========================================================= */
+
+.mapa-container {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 18px;
+
+    background: #16192b;
+
+    border: 1px solid #2a2e45;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   CABEÇALHO DO MAPA
+   ========================================================= */
+
+.cabecalho-mapa {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 16px;
+}
+
+.cabecalho-mapa h3 {
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+.cabecalho-mapa h3 i {
+    color: #2563eb;
+
+    font-size: 15px;
+}
+
+.cabecalho-mapa p {
+    margin: 5px 0 0;
+
+    color: #7f899e;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BOTÃO MINHA LOCALIZAÇÃO
+   ========================================================= */
+
+#btn-localizacao {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    border: 1px solid rgba(37, 99, 235, 0.45);
+
+    border-radius: 9px;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    color: #93c5fd;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+#btn-localizacao:hover {
+    background: #2563eb;
+
+    border-color: #2563eb;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+#btn-localizacao i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   MAPA
+   ========================================================= */
+
+#map {
+    width: 100%;
+
+    height: 570px;
+
+    background: #0e1424;
+
+    border: 1px solid #252b40;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEAFLET
+   ========================================================= */
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+
+    font-family: "Inter", sans-serif;
+
+    background: #0e1424;
+}
+
+
+/* Controles do mapa */
+
+.leaflet-control-zoom {
+    border: none !important;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+.leaflet-control-zoom a {
+    width: 32px !important;
+    height: 32px !important;
+
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #16192b !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #2a2e45 !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background: #2563eb !important;
+}
+
+
+/* =========================================================
+   POPUP DO MAPA
+   ========================================================= */
+
+.leaflet-popup-content-wrapper {
+    background: #1e2238;
+
+    color: #ffffff;
+
+    border: 1px solid #2a2e45;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.leaflet-popup-tip {
+    background: #1e2238;
+}
+
+.leaflet-popup-content {
+    margin: 14px;
+}
+
+.popup-loja h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+}
+
+.popup-loja p {
+    margin: 5px 0;
+
+    color: #aeb5c4;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+}
+
+.popup-avaliacao {
+    color: #facc15;
+}
+
+
+/* =========================================================
+   LISTA DE ASSISTÊNCIAS
+   ========================================================= */
+
+.lista-assistencias {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   FILTROS
+   ========================================================= */
+
+.filtros-assistencias {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px;
+
+    margin-bottom: 12px;
+
+    background: #16192b;
+
+    border: 1px solid #2a2e45;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+}
+
+.filtros-assistencias::-webkit-scrollbar {
+    height: 0;
+}
+
+.filtro-assistencia {
+    flex: 1;
+
+    min-width: max-content;
+
+    padding: 9px 13px;
+
+    border: 1px solid transparent;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #858da0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.filtro-assistencia:hover {
+    background: #202642;
+
+    color: #ffffff;
+}
+
+.filtro-assistencia.ativo {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, 0.22);
+}
+
+
+/* =========================================================
+   LISTA DOS CARDS
+   ========================================================= */
+
+#store-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    max-height: 570px;
+
+    padding-right: 5px;
+
+    overflow-y: auto;
+}
+
+
+/* Scroll */
+
+#store-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#store-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#store-list::-webkit-scrollbar-thumb {
+    background: #2a2e45;
+
+    border-radius: 20px;
+}
+
+#store-list::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+
+/* =========================================================
+   CARD DA ASSISTÊNCIA
+   ========================================================= */
+
+.store-card {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 13px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16192b,
+            #151827
+        );
+
+    border: 1px solid #272c41;
+
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* Linha azul lateral */
+
+.store-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 13px;
+    bottom: 13px;
+
+    width: 3px;
+
+    background: #2563eb;
+
+    border-radius: 0 5px 5px 0;
+
+    opacity: 0;
+
+    transition: 0.25s ease;
+}
+
+
+/* Hover / ativo */
+
+.store-card:hover,
+.store-card.active {
+    background: #1b2034;
+
+    border-color: rgba(37, 99, 235, 0.55);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+.store-card:hover::before,
+.store-card.active::before {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   IMAGEM DA ASSISTÊNCIA
+   ========================================================= */
+
+.store-card img {
+    width: 82px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    border: 1px solid #30364d;
+
+    background: #101421;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES
+   ========================================================= */
+
+.store-card-info {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.store-card-info h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 650;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   AVALIAÇÃO
+   ========================================================= */
+
+.rating-loja {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+
+    color: #facc15;
+
+    font-size: 11px;
+}
+
+.rating-loja span {
+    color: #dce1eb;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ENDEREÇO
+   ========================================================= */
+
+.endereco-loja {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+
+    color: #858da0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.endereco-loja i {
+    flex-shrink: 0;
+
+    color: #3b82f6;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status-loja {
+    width: fit-content;
+
+    margin-top: 7px;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.status-aberto {
+    background: rgba(34, 197, 94, 0.10);
+
+    color: #4ade80;
+
+    border: 1px solid rgba(74, 222, 128, 0.12);
+}
+
+.status-fechado {
+    background: rgba(239, 68, 68, 0.10);
+
+    color: #f87171;
+
+    border: 1px solid rgba(248, 113, 113, 0.12);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .area-assistencias {
+        grid-template-columns: 1fr;
+    }
+
+    #map {
+        height: 500px;
+    }
+
+    #store-list {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        max-height: none;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .section-assistencias-proximas {
+        padding: 55px 20px;
+    }
+
+    .titulo-assistencias-proximas h2 {
+        font-size: 32px;
+    }
+
+    .titulo-assistencias-proximas p {
+        font-size: 14px;
+    }
+
+    .cabecalho-mapa {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    #btn-localizacao {
+        width: 100%;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    #store-list {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        max-height: none;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — 450px
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .section-assistencias-proximas {
+        padding: 45px 14px;
+    }
+
+    .titulo-assistencias-proximas h2 {
+        font-size: 27px;
+    }
+
+    .titulo-assistencias-proximas p {
+        font-size: 13px;
+    }
+
+    .mapa-container {
+        padding: 13px;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .store-card {
+        padding: 11px;
+    }
+
+    .store-card img {
+        width: 72px;
+        height: 62px;
+    }
+
+    .store-card-info h3 {
+        font-size: 13px;
+    }
+}
 
 /* SEÇÃO 4 - COMO FUNCIONA*/
 
@@ -588,441 +1402,4 @@ footer p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
 
-/*area elisson mapa*/
 
-/* ============================= */
-/* RESET */
-/* ============================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* ============================= */
-/* ÁREA PRINCIPAL */
-/* ============================= */
-
-.area_loja {
-    width: 100%;
-    min-height: 700px;
-
-    background-color: #151925;
-
-    padding: 35px 4% 60px;
-}
-
-
-/* ============================= */
-/* TÍTULO */
-/* ============================= */
-
-.area_loja > h2 {
-    text-align: center;
-
-    color: #ffffff;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-        'Open Sans', 'Helvetica Neue', sans-serif;
-
-    font-size: 34px;
-
-    margin-bottom: 45px;
-}
-
-
-/* ============================= */
-/* MAPA + LISTA */
-/* ============================= */
-
-.conteudo-lojas {
-
-    max-width: 1320px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: 1.25fr 1fr;
-
-    gap: 50px;
-
-    align-items: center;
-}
-
-
-/* ============================= */
-/* ÁREA DO MAPA */
-/* ============================= */
-
-.area_mapa {
-
-    width: 100%;
-
-    background-color: #0e1424;
-
-    border: 1px solid #415386;
-
-    border-radius: 18px;
-
-    padding: 12px;
-
-    overflow: hidden;
-}
-
-
-/* ============================= */
-/* CABEÇALHO DO MAPA */
-/* ============================= */
-
-.titulo-mapa {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 5px 3px 15px;
-}
-
-
-.titulo-mapa h3 {
-
-    color: #ffffff;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, sans-serif;
-
-    font-size: 20px;
-
-    margin-bottom: 4px;
-}
-
-
-.titulo-mapa p {
-
-    color: #777f96;
-
-    font-family: system-ui, sans-serif;
-
-    font-size: 12px;
-}
-
-
-/* ============================= */
-/* BOTÃO LOCALIZAÇÃO */
-/* ============================= */
-
-.btn-localizacao {
-
-    background-color: #1b2335;
-
-    border: 1px solid #303b55;
-
-    border-radius: 8px;
-
-    padding: 9px 13px;
-
-    color: #ffffff;
-
-    font-size: 11px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-
-.btn-localizacao:hover {
-
-    background-color: #2563EB;
-
-    border-color: #2563EB;
-}
-
-
-/* ============================= */
-/* MAPA */
-/* ============================= */
-
-#map {
-
-    width: 200%;
-
-    height: 405px;
-
-    border-radius: 13px;
-
-    overflow: hidden;
-}
-
-
-#map iframe {
-
-    width: 100%;
-
-    height: 100%;
-
-    border: 0;
-
-    display: block;
-}
-
-
-/* ============================= */
-/* LISTA DE LOJAS */
-/* ============================= */
-
-.lista-lojas {
-
-    width: 100%;
-
-    background-color: #18233f;
-
-    border: 2px solid #415386;
-
-    border-radius: 16px;
-
-    overflow: hidden;
-}
-
-
-/* ============================= */
-/* CARD DA LOJA */
-/* ============================= */
-
-.loja {
-
-    min-height: 150px;
-
-    padding: 18px 15px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-
-    position: relative;
-
-    border-bottom: 1px solid #415386;
-
-    transition: 0.3s;
-}
-
-
-.loja:last-child {
-
-    border-bottom: none;
-}
-
-
-.loja:hover {
-
-    background-color: #202d4d;
-}
-
-
-/* ============================= */
-/* FOTO */
-/* ============================= */
-
-.foto-loja {
-
-    width: 230px;
-
-    height: 150px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    border: 1px solid #415386;
-
-    flex-shrink: 0;
-}
-
-
-/* ============================= */
-/* INFORMAÇÕES */
-/* ============================= */
-
-.info-loja {
-
-    flex: 1;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    gap: 5px;
-}
-
-
-/* ============================= */
-/* NOME DA LOJA */
-/* ============================= */
-
-.titulo-loja {
-
-    color: #ffffff;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', Roboto, sans-serif;
-
-    font-size: 25px;
-
-    font-weight: 700;
-}
-
-
-/* ============================= */
-/* AVALIAÇÃO */
-/* ============================= */
-
-.avaliacao {
-
-    color: #ffff00;
-
-    font-family: system-ui, sans-serif;
-
-    font-size: 15px;
-
-    font-weight: bold;
-}
-
-
-.avaliacao span {
-
-    color: #ffffff;
-
-    margin-left: 5px;
-}
-
-
-/* ============================= */
-/* LOCALIZAÇÃO */
-/* ============================= */
-
-.localizacao {
-
-    color: #ffffff;
-
-    font-family: system-ui, sans-serif;
-
-    font-size: 15px;
-
-    font-weight: 600;
-}
-
-
-/* ============================= */
-/* DISTÂNCIA */
-/* ============================= */
-
-.distancia {
-
-    color: #ffffff;
-
-    font-family: system-ui, sans-serif;
-
-    font-size: 21px;
-
-    font-weight: bold;
-
-    min-width: 60px;
-
-    text-align: right;
-}
-
-
-/* ============================= */
-/* RESPONSIVIDADE */
-/* ============================= */
-
-@media (max-width: 1000px) {
-
-    .conteudo-lojas {
-
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .area_mapa {
-
-        order: 1;
-    }
-
-    .lista-lojas {
-
-        order: 2;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .area_loja {
-
-        padding: 30px 15px 50px;
-    }
-
-    .area_loja > h2 {
-
-        font-size: 27px;
-
-        margin-bottom: 30px;
-    }
-
-    .titulo-mapa {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 12px;
-    }
-
-    #map {
-
-        height: 350px;
-    }
-
-    .loja {
-
-        padding: 15px;
-
-        gap: 12px;
-    }
-
-    .foto-loja {
-
-        width: 100px;
-
-        height: 80px;
-    }
-
-    .titulo-loja {
-
-        font-size: 19px;
-    }
-
-    .localizacao {
-
-        font-size: 12px;
-    }
-
-    .distancia {
-
-        font-size: 16px;
-
-        min-width: 45px;
-    }
-}
