@@ -114,7 +114,69 @@
     </section>
 
         <!-- Seção - "Assistências perto de você"-->
+        <section class="section-assistencias-proximas">
 
+            <div class="titulo-assistencias-proximas">
+                <h2>Assistências perto de você</h2>
+                <p>Encontre assistências técnicas próximas e localize-as no mapa.</p>
+            </div>
+        
+            <div class="area-assistencias">
+        
+                <!-- MAPA -->
+                <div class="mapa-container">
+        
+                    <div class="cabecalho-mapa">
+                        <div>
+                            <h3>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lojas no mapa
+                            </h3>
+        
+                            <p>Clique em uma assistência para localizá-la.</p>
+                        </div>
+        
+                        <button id="btn-localizacao">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            Minha localização
+                        </button>
+                    </div>
+        
+                    <div id="map"></div>
+        
+                </div>
+        
+        
+                <!-- LISTA -->
+                <div class="lista-assistencias">
+        
+                    <div class="filtros-assistencias">
+        
+                        <button class="filtro-assistencia ativo" data-regiao="todos">
+                            Todas
+                        </button>
+        
+                        <button class="filtro-assistencia" data-regiao="asa-sul">
+                            Asa Sul
+                        </button>
+        
+                        <button class="filtro-assistencia" data-regiao="paranoa">
+                            Paranoá
+                        </button>
+        
+                    </div>
+        
+                    <div id="store-list">
+        
+                        <!-- Cards gerados pelo JavaScript -->
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </section>
 
         <!-- Seção - "Como Funciona" -->
          <section class="guia">
@@ -332,7 +394,9 @@
             <p class="direitos-footer">2026 Itechub. Todos os direitos reservados</p>
         </footer>
     </main>
-   
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
 
 </body>
 
