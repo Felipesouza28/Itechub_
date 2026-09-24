@@ -48,7 +48,7 @@ button {
 
 header {
   height: 76px;
-  background: rgba(15, 23, 42, .98);
+  background: #151925;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -590,7 +590,7 @@ section {
 }
 
 footer {
-  background: #0b1120;
+  background: #151925;
   color: #fff;
   padding: 58px clamp(22px, 5vw, 72px) 20px;
 }
@@ -4076,5 +4076,417 @@ body.modal-open {
   .faq-grid details p {
     padding: 0 16px 15px;
     font-size: 13px
+  }
+}
+
+/* =========================================================
+   ITECHUB — AJUSTE FINAL DO LOGIN/CADASTRO NO MOBILE
+   Mantém o desktop intacto e corrige somente a composição
+   responsiva das telas de autenticação.
+   ========================================================= */
+@media (max-width: 760px) {
+  .auth-main {
+    min-height: calc(100vh - 76px);
+    padding: 16px 12px 24px;
+    align-items: center;
+  }
+
+  /* Estrutura única: painel azul ocupa 40% e formulário 60%. */
+  .auth-shell-v9,
+  .company-auth-shell {
+    width: 100%;
+    min-height: 780px;
+    height: 780px;
+    max-height: calc(100vh - 100px);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  /* O formulário fica sempre em uma área própria, sem ser coberto
+     pelo painel azul. O conteúdo pode rolar quando houver muitos campos. */
+  .auth-shell-v9 .auth-form-view,
+  .company-auth-shell .auth-form-view {
+    position: absolute;
+    top: 40% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    min-height: 0;
+    padding: 24px 18px 28px !important;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Cadastro: azul em cima / formulário embaixo. */
+  .auth-shell-v9[data-mode="signup"] .auth-slider,
+  .company-auth-shell[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 40% !important;
+    border-radius: 18px 18px 0 0 !important;
+  }
+
+  /* Login: formulário em cima / azul embaixo. */
+  .auth-shell-v9[data-mode="signin"] .auth-slider,
+  .company-auth-shell[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 40% !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  /* Formulários ocupam somente a área branca correspondente ao estado. */
+  .auth-shell-v9[data-mode="signup"] .auth-signup-form,
+  .auth-shell-v9[data-mode="signin"] .auth-signin-form,
+  .company-auth-shell[data-mode="signup"] .auth-signup-form,
+  .company-auth-shell[data-mode="signin"] .auth-signin-form {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signin-form,
+  .auth-shell-v9[data-mode="signin"] .auth-signup-form,
+  .company-auth-shell[data-mode="signup"] .auth-signin-form,
+  .company-auth-shell[data-mode="signin"] .auth-signup-form {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Remove o recuo lateral usado somente no desktop. */
+  .auth-shell-v9 .auth-signup-form,
+  .auth-shell-v9 .auth-signin-form,
+  .company-auth-shell .auth-signup-form,
+  .company-auth-shell .auth-signin-form {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content,
+  .company-auth-shell .auth-form-content {
+    width: min(430px, 100%);
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .auth-shell-v9 .auth-logo,
+  .company-auth-shell .auth-logo {
+    width: 82px;
+    margin-bottom: 8px;
+  }
+
+  .auth-shell-v9 .auth-form-content h1,
+  .company-auth-shell .auth-form-content h1 {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+
+  .auth-shell-v9 .auth-subtitle,
+  .company-auth-shell .auth-subtitle {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+
+  .auth-shell-v9 .auth-form,
+  .company-auth-shell .auth-form {
+    gap: 9px;
+  }
+
+  .auth-shell-v9 .auth-form input,
+  .company-auth-shell .auth-form input {
+    height: 44px;
+  }
+
+  .auth-shell-v9 .auth-primary,
+  .company-auth-shell .auth-primary {
+    min-height: 44px;
+  }
+
+  .auth-slider-content {
+    width: min(340px, 88%);
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .auth-slider-content h2 {
+    font-size: 22px;
+    line-height: 1.15;
+    margin: 7px 0 8px;
+  }
+
+  .auth-slider-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 11px;
+    max-width: 310px;
+  }
+
+  .auth-slider-content .auth-badge {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .auth-shell-v9 .auth-outline,
+  .company-auth-shell .auth-outline {
+    padding: 9px 25px;
+    font-size: 13px;
+  }
+
+  .auth-mobile-switch {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .company-auth-shell .company-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 9px;
+  }
+
+  .company-auth-shell .company-form-grid .full {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-main {
+    padding: 10px 9px 18px;
+  }
+
+  .auth-shell-v9,
+  .company-auth-shell {
+    min-height: 760px;
+    height: 760px;
+  }
+
+  .auth-shell-v9 .auth-form-view,
+  .company-auth-shell .auth-form-view {
+    padding: 20px 14px 24px !important;
+  }
+
+  .auth-shell-v9 .auth-signup-form,
+  .auth-shell-v9 .auth-signin-form,
+  .company-auth-shell .auth-signup-form,
+  .company-auth-shell .auth-signin-form {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content h1,
+  .company-auth-shell .auth-form-content h1 {
+    font-size: 23px;
+  }
+
+  .auth-slider-content h2 {
+    font-size: 20px;
+  }
+
+  .auth-slider-content p {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   ITECHUB — CORREÇÃO FINAL MOBILE AUTH
+   Mantém o layout desktop e corrige a geometria mobile.
+   No mobile, o formulário ativo ocupa a área branca restante:
+   - cadastro: painel azul em cima / formulário embaixo
+   - login: formulário em cima / painel azul embaixo
+   ========================================================= */
+@media (max-width: 760px) {
+  .auth-shell-v9 {
+    min-height: 720px !important;
+    height: 720px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .auth-shell-v9 .auth-slider {
+    position: absolute !important;
+    width: 100% !important;
+    height: 40% !important;
+    left: 0 !important;
+    bottom: auto !important;
+    z-index: 10 !important;
+  }
+
+  /* CADASTRO: azul em cima, formulário embaixo */
+  .auth-shell-v9[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signup-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    padding: 24px 22px 22px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 5 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signin-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+  }
+
+  /* LOGIN: formulário em cima, azul embaixo */
+  .auth-shell-v9[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  .auth-shell-v9[data-mode="signin"] .auth-signin-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    padding: 24px 22px 22px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 5 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .auth-shell-v9[data-mode="signin"] .auth-signup-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+  }
+
+  /* Remove o grande espaço vertical criado pelo alinhamento desktop. */
+  .auth-shell-v9 .auth-form-view {
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .auth-shell-v9 .auth-form-content {
+    width: min(430px, 100%) !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+  }
+
+  .auth-shell-v9 .auth-logo {
+    width: 88px !important;
+    margin: 0 auto 8px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content h1 {
+    font-size: 26px !important;
+    margin: 0 0 5px !important;
+  }
+
+  .auth-shell-v9 .auth-subtitle {
+    font-size: 13px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .auth-shell-v9 .social-auth {
+    margin-bottom: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-form {
+    gap: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-form label {
+    min-height: 44px !important;
+  }
+
+  .auth-shell-v9 .auth-primary {
+    min-height: 44px !important;
+  }
+
+  .auth-shell-v9 .auth-mobile-switch {
+    margin-top: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content {
+    width: min(380px, 86%) !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content h2 {
+    font-size: 23px !important;
+    margin: 7px 0 !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content .auth-badge {
+    font-size: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-outline {
+    padding: 8px 25px !important;
+  }
+
+  /* Empresa: mesma lógica geométrica. */
+  .company-auth-shell[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+  }
+
+  .company-auth-shell[data-mode="signup"] .auth-signup-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    height: 60% !important;
+  }
+
+  .company-auth-shell[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+  }
+
+  .company-auth-shell[data-mode="signin"] .auth-signin-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    height: 60% !important;
+  }
+
+  .company-auth-shell .auth-form-view {
+    padding: 22px 18px 20px !important;
+    overflow-y: auto !important;
   }
 }
