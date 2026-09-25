@@ -16,21 +16,21 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Inter, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.5
+  line-height: 1.5;
 }
 
-/* header */ 
+/* header */
 
 a {
   text-decoration: none;
@@ -48,7 +48,7 @@ button {
 
 header {
   height: 76px;
-  background: rgba(15, 23, 42, .98);
+  background: #151925;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +97,7 @@ header {
   border: 1px solid #2d3b5c;
   border-radius: 12px;
   list-style: none;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 .submenu li {
@@ -120,6 +120,8 @@ header {
 .btn-entrar:hover {
   background: #1d4ed8;
 }
+
+/* Felipe */
 
 .banner {
   min-height: 620px;
@@ -179,7 +181,7 @@ header {
   border: 0;
   outline: 0;
   padding: 15px 16px;
-  color: #334155
+  color: #334155;
 }
 
 .search-box button {
@@ -187,24 +189,26 @@ header {
   border-radius: 11px;
   background: var(--blue);
   color: #fff;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .search-box button:hover {
-  background: #1d4ed8
+  background: #1d4ed8;
 }
 
+/* Thiago */
+
 section {
-  scroll-margin-top: 95px
+  scroll-margin-top: 95px;
 }
 
 .section {
-  padding: 76px clamp(22px, 5vw, 72px)
+  padding: 76px clamp(22px, 5vw, 72px);
 }
 
 .section-dark {
   background: var(--navy2);
-  color: #fff
+  color: #fff;
 }
 
 .section-head {
@@ -212,27 +216,27 @@ section {
   justify-content: space-between;
   align-items: end;
   gap: 25px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .section-head h2 {
   font-size: 34px;
-  letter-spacing: -.03em
+  letter-spacing: -.03em;
 }
 
 .section-head p {
   color: var(--muted);
-  max-width: 600px
+  max-width: 600px;
 }
 
 .section-dark .section-head p {
-  color: #aab6cc
+  color: #aab6cc;
 }
 
 .text-link {
   color: var(--blue2);
   font-weight: 700;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .categories {
@@ -241,7 +245,7 @@ section {
   gap: 14px;
   margin-top: -35px;
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
 .category {
@@ -252,20 +256,20 @@ section {
   text-align: center;
   box-shadow: var(--shadow);
   font-weight: 700;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .category i {
   display: block;
   color: var(--blue);
   font-size: 24px;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 
 .lojas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px
+  gap: 18px;
 }
 
 .info-lojas {
@@ -274,12 +278,12 @@ section {
   background: #fff;
   border: 1px solid var(--border);
   box-shadow: 0 8px 25px rgba(15, 23, 42, .08);
-  transition: .25s
+  transition: .25s;
 }
 
 .info-lojas:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 .store-cover {
@@ -287,58 +291,58 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eef4ff
+  background: #eef4ff;
 }
 
 .store-cover img {
   max-height: 105px;
   max-width: 82%;
-  object-fit: contain
+  object-fit: contain;
 }
 
 .store-body {
-  padding: 18px
+  padding: 18px;
 }
 
 .store-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px
+  gap: 10px;
 }
 
 .store-title h3 {
-  font-size: 18px
+  font-size: 18px;
 }
 
 .verified {
   font-size: 11px;
   color: #2563eb;
-  font-weight: 800
+  font-weight: 800;
 }
 
 .rating {
   font-size: 13px;
   margin: 8px 0;
-  color: #475569
+  color: #475569;
 }
 
 .rating strong {
-  color: #111827
+  color: #111827;
 }
 
 .localizacao {
   font-size: 13px;
   color: var(--muted);
   font-weight: 500;
-  margin-bottom: 14px
+  margin-bottom: 14px;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .tag {
@@ -347,7 +351,7 @@ section {
   border-radius: 999px;
   padding: 5px 9px;
   font-size: 11px;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .btn-perfil {
@@ -357,27 +361,27 @@ section {
   border-radius: 10px;
   background: #eff6ff;
   color: #1d4ed8;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .btn-perfil:hover {
-  background: #dbeafe
+  background: #dbeafe;
 }
 
 .guia {
   background: linear-gradient(135deg, #f8fafc, #eef4ff);
-  padding: 76px clamp(22px, 5vw, 72px)
+  padding: 76px clamp(22px, 5vw, 72px);
 }
 
 .guia h2 {
   font-size: 34px;
-  margin-bottom: 34px
+  margin-bottom: 34px;
 }
 
 .etapas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px
+  gap: 18px;
 }
 
 .etapa {
@@ -385,7 +389,7 @@ section {
   border: 1px solid var(--border);
   padding: 24px;
   border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(15, 23, 42, .06)
+  box-shadow: 0 8px 25px rgba(15, 23, 42, .06);
 }
 
 .etapa i {
@@ -397,37 +401,37 @@ section {
   background: #dbeafe;
   color: #1d4ed8;
   font-size: 21px;
-  margin-bottom: 18px
+  margin-bottom: 18px;
 }
 
 .etapa h3 {
   font-size: 17px;
-  margin-bottom: 7px
+  margin-bottom: 7px;
 }
 
 .etapa p {
   font-size: 14px;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 #duvidas {
   padding: 76px clamp(22px, 5vw, 72px);
   background: linear-gradient(100deg, rgba(15, 23, 42, .95), rgba(19, 27, 51, .88)), url('img/img-bg-duvidas.png') center/cover;
-  color: #fff
+  color: #fff;
 }
 
 #duvidas h2 {
   font-size: 34px;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 
 #duvidas>p {
   color: #b9c5d9;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .faq-grid {
-  max-width: 950px
+  width: 100%;
 }
 
 .faq-grid details {
@@ -435,7 +439,7 @@ section {
   border-radius: 14px;
   margin-bottom: 12px;
   background: rgba(255, 255, 255, .04);
-  overflow: hidden
+  overflow: hidden;
 }
 
 .faq-grid summary {
@@ -444,65 +448,65 @@ section {
   font-weight: 600;
   cursor: pointer;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .faq-grid summary::-webkit-details-marker {
-  display: none
+  display: none;
 }
 
 .faq-grid summary i {
-  color: #60a5fa
+  color: #60a5fa;
 }
 
 .faq-grid details p {
   padding: 0 20px 20px;
   color: #cbd5e1;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background: #172b4d;
-  color: #fff
+  color: #fff;
 }
 
 .stat {
   padding: 30px;
   text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, .1)
+  border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
 .stat:last-child {
-  border-right: 0
+  border-right: 0;
 }
 
 .stat i {
   font-size: 24px;
-  color: #60a5fa
+  color: #60a5fa;
 }
 
 .stat strong {
   display: block;
   font-size: 28px;
-  margin: 6px 0
+  margin: 6px 0;
 }
 
 .stat span {
   color: #cbd5e1;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .articles {
   background: #0a1428;
-  color: #fff
+  color: #fff;
 }
 
 .cards_Dicas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px
+  gap: 18px;
 }
 
 .cards_Dicas_Artigos {
@@ -510,11 +514,11 @@ section {
   border: 1px solid #273752;
   border-radius: 16px;
   overflow: hidden;
-  transition: .25s
+  transition: .25s;
 }
 
 .cards_Dicas_Artigos:hover {
-  transform: translateY(-5px)
+  transform: translateY(-5px);
 }
 
 .imagem_Artigos {
@@ -522,24 +526,24 @@ section {
   height: 175px;
   object-fit: cover;
   display: block;
-  margin: 0
+  margin: 0;
 }
 
 .article-body {
-  padding: 17px
+  padding: 17px;
 }
 
 .title_Card {
   font-size: 15px;
   line-height: 1.35;
-  min-height: 61px
+  min-height: 61px;
 }
 
 .link_Artigo,
 .link_Artigo2 {
   color: #60a5fa;
   font-size: 13px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .tem_Uma_Assistencia {
@@ -549,27 +553,27 @@ section {
   gap: 55px;
   background: linear-gradient(120deg, #13284a, #071d4b);
   color: #fff;
-  padding: 70px clamp(22px, 7vw, 100px)
+  padding: 70px clamp(22px, 7vw, 100px);
 }
 
 .tem_Uma_Assistencia img {
   width: 100%;
-  height: auto
+  height: auto;
 }
 
 .chamada_Acao h2 {
   font-size: 44px;
   line-height: 1.05;
-  margin-bottom: 18px
+  margin-bottom: 18px;
 }
 
 .chamada_Acao h2 span {
-  color: #3b82f6
+  color: #3b82f6;
 }
 
 .chamada_Acao p {
   color: #cbd5e1;
-  max-width: 550px
+  max-width: 550px;
 }
 
 .cta {
@@ -578,61 +582,61 @@ section {
   padding: 13px 20px;
   background: #2563eb;
   border-radius: 10px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .cta:hover {
-  background: #1d4ed8
+  background: #1d4ed8;
 }
 
 footer {
-  background: #0b1120;
+  background: #151925;
   color: #fff;
-  padding: 58px clamp(22px, 5vw, 72px) 20px
+  padding: 58px clamp(22px, 5vw, 72px) 20px;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr repeat(4, 1fr);
-  gap: 35px
+  gap: 35px;
 }
 
 .footer-brand p {
   max-width: 330px;
   color: #94a3b8;
-  margin: 18px 0
+  margin: 18px 0;
 }
 
 .icones-sociais {
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
 
 .icones-sociais img {
   width: 34px;
-  height: 34px
+  height: 34px;
 }
 
 .footer-col h3 {
   font-size: 14px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .footer-col ul {
-  list-style: none
+  list-style: none;
 }
 
 .footer-col li {
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .footer-col a {
   color: #94a3b8;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .footer-col a:hover {
-  color: #fff
+  color: #fff;
 }
 
 .direitos-footer {
@@ -641,33 +645,33 @@ footer {
   padding-top: 18px;
   text-align: center;
   color: #64748b;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .page {
-  min-height: calc(100vh - 76px)
+  min-height: calc(100vh - 76px);
 }
 
 .simple-hero {
   padding: 70px clamp(22px, 6vw, 90px);
-  background: #f1f5f9
+  background: #f1f5f9;
 }
 
 .simple-hero h1 {
   font-size: 44px;
-  letter-spacing: -.03em
+  letter-spacing: -.03em;
 }
 
 .simple-hero p {
   color: var(--muted);
-  margin-top: 8px
+  margin-top: 8px;
 }
 
 .filters {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin: 28px 0
+  margin: 28px 0;
 }
 
 .filter {
@@ -675,17 +679,17 @@ footer {
   border: 1px solid var(--border);
   padding: 10px 14px;
   border-radius: 10px;
-  color: #475569
+  color: #475569;
 }
 
 .directory {
-  padding: 50px clamp(22px, 5vw, 72px)
+  padding: 50px clamp(22px, 5vw, 72px);
 }
 
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px
+  gap: 20px;
 }
 
 .auth-wrap {
@@ -693,7 +697,7 @@ footer {
   display: grid;
   place-items: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #eff6ff, #f8fafc)
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
 }
 
 .auth-card {
@@ -702,35 +706,35 @@ footer {
   border: 1px solid var(--border);
   border-radius: 22px;
   padding: 36px;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
 }
 
 .auth-card .logo {
-  margin: 0 auto 24px
+  margin: 0 auto 24px;
 }
 
 .auth-card h1 {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 
 .auth-card>p {
   text-align: center;
   color: var(--muted);
   font-size: 14px;
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 
 .field {
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .field label {
   display: block;
   font-size: 13px;
   font-weight: 700;
-  margin-bottom: 7px
+  margin-bottom: 7px;
 }
 
 .field input {
@@ -738,12 +742,12 @@ footer {
   border: 1px solid var(--border);
   padding: 12px 13px;
   border-radius: 10px;
-  outline: 0
+  outline: 0;
 }
 
 .field input:focus {
   border-color: #60a5fa;
-  box-shadow: 0 0 0 3px #dbeafe
+  box-shadow: 0 0 0 3px #dbeafe;
 }
 
 .auth-submit {
@@ -753,31 +757,31 @@ footer {
   border-radius: 10px;
   background: #2563eb;
   color: #fff;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .auth-links {
   text-align: center;
   margin-top: 18px;
   font-size: 13px;
-  color: var(--muted)
+  color: var(--muted);
 }
 
 .auth-links a {
   color: #2563eb;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .profile-hero {
   background: #0f172a;
   color: #fff;
-  padding: 55px clamp(22px, 7vw, 100px)
+  padding: 55px clamp(22px, 7vw, 100px);
 }
 
 .profile-top {
   display: flex;
   align-items: center;
-  gap: 25px
+  gap: 25px;
 }
 
 .profile-logo {
@@ -786,90 +790,90 @@ footer {
   background: #fff;
   border-radius: 18px;
   object-fit: contain;
-  padding: 10px
+  padding: 10px;
 }
 
 .profile-top h1 {
-  font-size: 38px
+  font-size: 38px;
 }
 
 .profile-top p {
-  color: #cbd5e1
+  color: #cbd5e1;
 }
 
 .profile-actions {
   margin-left: auto;
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
 
 .profile-actions a {
   padding: 12px 17px;
   border-radius: 10px;
   background: #2563eb;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .profile-content {
   padding: 45px clamp(22px, 7vw, 100px);
   display: grid;
   grid-template-columns: 1.7fr 1fr;
-  gap: 28px
+  gap: 28px;
 }
 
 .panel {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 18px;
-  padding: 25px
+  padding: 25px;
 }
 
 .panel h2 {
   font-size: 22px;
   color: var(--text);
-  margin-bottom: 18px
+  margin-bottom: 18px;
 }
 
 .service-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px
+  gap: 10px;
 }
 
 .service {
   padding: 12px;
   background: #f8fafc;
   border-radius: 10px;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .review {
   padding: 17px 0;
-  border-top: 1px solid var(--border)
+  border-top: 1px solid var(--border);
 }
 
 .review:first-child {
-  border-top: 0
+  border-top: 0;
 }
 
 .review strong {
-  display: block
+  display: block;
 }
 
 .review span {
   color: #f59e0b;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .side-card {
   position: sticky;
-  top: 100px
+  top: 100px;
 }
 
 .price {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .contact {
@@ -879,36 +883,36 @@ footer {
   color: #fff;
   padding: 13px;
   border-radius: 10px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 @media(max-width:1050px) {
   .menu {
-    gap: 15px
+    gap: 15px;
   }
 
   .lojas {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .categories {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .etapas {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cards_Dicas {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer-grid {
-    grid-template-columns: 2fr repeat(2, 1fr)
+    grid-template-columns: 2fr repeat(2, 1fr);
   }
 
   .directory-grid {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -927,11 +931,6 @@ footer {
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: 4px
-  }
-
-  .menu>li:nth-child(4),
-  .menu>li:nth-child(5) {
-    display: none
   }
 
   .banner {
@@ -3513,10 +3512,8 @@ body.modal-open {
   }
 }
 
-/* =========================================================
-   V17 — ASSISTÊNCIAS PERTO DE VOCÊ
-   Visual inspirado na V13 + mapa integrado
-   ========================================================= */
+/* ASSISTÊNCIAS PERTO DE VOCÊ - Elissom */
+
 .section-assistencias-proximas {
   width: 100%;
   padding: 78px 40px;
@@ -3525,8 +3522,8 @@ body.modal-open {
 }
 
 .titulo-assistencias-proximas {
-  width: 100%;
-  max-width: 1200px;
+  width: 96%;
+  max-width: 100%;
   margin: 0 auto 34px;
 }
 
@@ -3551,15 +3548,15 @@ body.modal-open {
 }
 
 .titulo-assistencias-proximas p {
-  margin: 12px 0 0;
+  margin: 12px 0px 0px;
   color: #64748b;
   font-size: 15px;
   line-height: 1.6;
 }
 
 .area-assistencias {
-  width: 100%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(340px, .85fr);
@@ -4074,5 +4071,794 @@ body.modal-open {
   .faq-grid details p {
     padding: 0 16px 15px;
     font-size: 13px
+  }
+}
+
+/* =========================================================
+   ITECHUB — AJUSTE FINAL DO LOGIN/CADASTRO NO MOBILE
+   Mantém o desktop intacto e corrige somente a composição
+   responsiva das telas de autenticação.
+   ========================================================= */
+@media (max-width: 760px) {
+  .auth-main {
+    min-height: calc(100vh - 76px);
+    padding: 16px 12px 24px;
+    align-items: center;
+  }
+
+  /* Estrutura única: painel azul ocupa 40% e formulário 60%. */
+  .auth-shell-v9,
+  .company-auth-shell {
+    width: 100%;
+    min-height: 780px;
+    height: 780px;
+    max-height: calc(100vh - 100px);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  /* O formulário fica sempre em uma área própria, sem ser coberto
+     pelo painel azul. O conteúdo pode rolar quando houver muitos campos. */
+  .auth-shell-v9 .auth-form-view,
+  .company-auth-shell .auth-form-view {
+    position: absolute;
+    top: 40% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    min-height: 0;
+    padding: 24px 18px 28px !important;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Cadastro: azul em cima / formulário embaixo. */
+  .auth-shell-v9[data-mode="signup"] .auth-slider,
+  .company-auth-shell[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 40% !important;
+    border-radius: 18px 18px 0 0 !important;
+  }
+
+  /* Login: formulário em cima / azul embaixo. */
+  .auth-shell-v9[data-mode="signin"] .auth-slider,
+  .company-auth-shell[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 40% !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  /* Formulários ocupam somente a área branca correspondente ao estado. */
+  .auth-shell-v9[data-mode="signup"] .auth-signup-form,
+  .auth-shell-v9[data-mode="signin"] .auth-signin-form,
+  .company-auth-shell[data-mode="signup"] .auth-signup-form,
+  .company-auth-shell[data-mode="signin"] .auth-signin-form {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signin-form,
+  .auth-shell-v9[data-mode="signin"] .auth-signup-form,
+  .company-auth-shell[data-mode="signup"] .auth-signin-form,
+  .company-auth-shell[data-mode="signin"] .auth-signup-form {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Remove o recuo lateral usado somente no desktop. */
+  .auth-shell-v9 .auth-signup-form,
+  .auth-shell-v9 .auth-signin-form,
+  .company-auth-shell .auth-signup-form,
+  .company-auth-shell .auth-signin-form {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content,
+  .company-auth-shell .auth-form-content {
+    width: min(430px, 100%);
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .auth-shell-v9 .auth-logo,
+  .company-auth-shell .auth-logo {
+    width: 82px;
+    margin-bottom: 8px;
+  }
+
+  .auth-shell-v9 .auth-form-content h1,
+  .company-auth-shell .auth-form-content h1 {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+
+  .auth-shell-v9 .auth-subtitle,
+  .company-auth-shell .auth-subtitle {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+
+  .auth-shell-v9 .auth-form,
+  .company-auth-shell .auth-form {
+    gap: 9px;
+  }
+
+  .auth-shell-v9 .auth-form input,
+  .company-auth-shell .auth-form input {
+    height: 44px;
+  }
+
+  .auth-shell-v9 .auth-primary,
+  .company-auth-shell .auth-primary {
+    min-height: 44px;
+  }
+
+  .auth-slider-content {
+    width: min(340px, 88%);
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .auth-slider-content h2 {
+    font-size: 22px;
+    line-height: 1.15;
+    margin: 7px 0 8px;
+  }
+
+  .auth-slider-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 11px;
+    max-width: 310px;
+  }
+
+  .auth-slider-content .auth-badge {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .auth-shell-v9 .auth-outline,
+  .company-auth-shell .auth-outline {
+    padding: 9px 25px;
+    font-size: 13px;
+  }
+
+  .auth-mobile-switch {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .company-auth-shell .company-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 9px;
+  }
+
+  .company-auth-shell .company-form-grid .full {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-main {
+    padding: 10px 9px 18px;
+  }
+
+  .auth-shell-v9,
+  .company-auth-shell {
+    min-height: 760px;
+    height: 760px;
+  }
+
+  .auth-shell-v9 .auth-form-view,
+  .company-auth-shell .auth-form-view {
+    padding: 20px 14px 24px !important;
+  }
+
+  .auth-shell-v9 .auth-signup-form,
+  .auth-shell-v9 .auth-signin-form,
+  .company-auth-shell .auth-signup-form,
+  .company-auth-shell .auth-signin-form {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content h1,
+  .company-auth-shell .auth-form-content h1 {
+    font-size: 23px;
+  }
+
+  .auth-slider-content h2 {
+    font-size: 20px;
+  }
+
+  .auth-slider-content p {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   ITECHUB — CORREÇÃO FINAL MOBILE AUTH
+   Mantém o layout desktop e corrige a geometria mobile.
+   No mobile, o formulário ativo ocupa a área branca restante:
+   - cadastro: painel azul em cima / formulário embaixo
+   - login: formulário em cima / painel azul embaixo
+   ========================================================= */
+@media (max-width: 760px) {
+  .auth-shell-v9 {
+    min-height: 720px !important;
+    height: 720px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .auth-shell-v9 .auth-slider {
+    position: absolute !important;
+    width: 100% !important;
+    height: 40% !important;
+    left: 0 !important;
+    bottom: auto !important;
+    z-index: 10 !important;
+  }
+
+  /* CADASTRO: azul em cima, formulário embaixo */
+  .auth-shell-v9[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signup-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    padding: 24px 22px 22px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 5 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .auth-shell-v9[data-mode="signup"] .auth-signin-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+  }
+
+  /* LOGIN: formulário em cima, azul embaixo */
+  .auth-shell-v9[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  .auth-shell-v9[data-mode="signin"] .auth-signin-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    padding: 24px 22px 22px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    z-index: 5 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .auth-shell-v9[data-mode="signin"] .auth-signup-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60% !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+  }
+
+  /* Remove o grande espaço vertical criado pelo alinhamento desktop. */
+  .auth-shell-v9 .auth-form-view {
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .auth-shell-v9 .auth-form-content {
+    width: min(430px, 100%) !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+  }
+
+  .auth-shell-v9 .auth-logo {
+    width: 88px !important;
+    margin: 0 auto 8px !important;
+  }
+
+  .auth-shell-v9 .auth-form-content h1 {
+    font-size: 26px !important;
+    margin: 0 0 5px !important;
+  }
+
+  .auth-shell-v9 .auth-subtitle {
+    font-size: 13px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .auth-shell-v9 .social-auth {
+    margin-bottom: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-form {
+    gap: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-form label {
+    min-height: 44px !important;
+  }
+
+  .auth-shell-v9 .auth-primary {
+    min-height: 44px !important;
+  }
+
+  .auth-shell-v9 .auth-mobile-switch {
+    margin-top: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content {
+    width: min(380px, 86%) !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content h2 {
+    font-size: 23px !important;
+    margin: 7px 0 !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-slider-content .auth-badge {
+    font-size: 10px !important;
+  }
+
+  .auth-shell-v9 .auth-outline {
+    padding: 8px 25px !important;
+  }
+
+  /* Empresa: mesma lógica geométrica. */
+  .company-auth-shell[data-mode="signup"] .auth-slider {
+    top: 0 !important;
+  }
+
+  .company-auth-shell[data-mode="signup"] .auth-signup-form {
+    top: 40% !important;
+    bottom: 0 !important;
+    height: 60% !important;
+  }
+
+  .company-auth-shell[data-mode="signin"] .auth-slider {
+    top: 60% !important;
+  }
+
+  .company-auth-shell[data-mode="signin"] .auth-signin-form {
+    top: 0 !important;
+    bottom: 40% !important;
+    height: 60% !important;
+  }
+
+  .company-auth-shell .auth-form-view {
+    padding: 22px 18px 20px !important;
+    overflow-y: auto !important;
+  }
+}
+
+
+/* =========================================================
+   QUEM SOMOS — EQUIPE ITECHUB
+   ========================================================= */
+.team-page {
+  background: #f8fafc;
+  color: #172033;
+}
+
+.team-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #131b33 62%, #1d4ed8 150%);
+  color: #fff;
+  padding: 92px 7% 86px;
+}
+
+.team-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 50%;
+  right: -130px;
+  top: -180px;
+}
+
+.team-hero::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(59, 130, 246, .22);
+  border-radius: 50%;
+  left: -120px;
+  bottom: -150px;
+}
+
+.team-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.team-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.team-hero .team-eyebrow {
+  color: #93c5fd;
+}
+
+.team-hero h1 {
+  max-width: 760px;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+  margin: 0 0 22px;
+}
+
+.team-hero h1 span {
+  color: #60a5fa;
+}
+
+.team-hero-copy>p {
+  max-width: 690px;
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.team-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.team-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .06);
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.team-about {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 88px 24px;
+}
+
+.team-section-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.team-section-heading h2,
+.team-project h2,
+.team-closing h2 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -.035em;
+  line-height: 1.08;
+}
+
+.team-section-heading p {
+  color: #64748b;
+  line-height: 1.7;
+  margin: 14px auto 0;
+  max-width: 650px;
+}
+
+.developers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.developer-card {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, .08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, .12);
+}
+
+.developer-photo {
+  aspect-ratio: 4/3;
+  background: linear-gradient(145deg, #eef4ff, #e2e8f0);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.developer-photo::after {
+  content: "ADICIONAR FOTO";
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, .72);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.developer-photo span {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #2563eb;
+  font-size: 30px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .10);
+}
+
+.developer-info {
+  padding: 19px 20px 22px;
+}
+
+.developer-info h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+}
+
+.developer-info p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.photo-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 13px;
+  margin: 28px 0 0;
+}
+
+.team-project {
+  background: #eef4ff;
+  padding: 86px 24px;
+}
+
+.team-project-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.team-project p {
+  color: #64748b;
+  line-height: 1.75;
+  max-width: 650px;
+}
+
+.team-values {
+  display: grid;
+  gap: 14px;
+}
+
+.team-values>div {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  column-gap: 14px;
+  padding: 18px;
+  border: 1px solid #dbe5f5;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.team-values i {
+  grid-row: span 2;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.team-values strong {
+  align-self: end;
+  color: #172033;
+}
+
+.team-values span {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.team-closing {
+  text-align: center;
+  padding: 86px 24px;
+  background: #fff;
+}
+
+.team-closing p {
+  max-width: 600px;
+  margin: 14px auto 26px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.team-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 20px;
+  border-radius: 11px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, .22);
+  transition: .2s ease;
+}
+
+.team-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+@media(max-width:900px) {
+
+  .team-hero-inner,
+  .team-project-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .team-hero {
+    padding: 70px 24px;
+  }
+
+  .team-hero-card {
+    min-height: auto;
+  }
+
+  .developers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px) {
+  .team-hero {
+    padding: 55px 20px 62px;
+  }
+
+  .team-hero h1 {
+    font-size: 40px;
+  }
+
+  .team-hero-copy>p {
+    font-size: 15px;
+  }
+
+  .team-hero-points {
+    display: grid;
+  }
+
+  .team-hero-points span {
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .team-about {
+    padding: 64px 18px;
+  }
+
+  .developers-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .developer-photo {
+    aspect-ratio: 16/10;
+  }
+
+  .team-project {
+    padding: 64px 18px;
+  }
+
+  .team-closing {
+    padding: 64px 18px;
+  }
+
+  .photo-note {
+    text-align: center;
+    line-height: 1.5;
   }
 }
