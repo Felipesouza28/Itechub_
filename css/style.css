@@ -30,7 +30,7 @@ body {
   line-height: 1.5;
 }
 
-/* header */ 
+/* header */
 
 a {
   text-decoration: none;
@@ -931,11 +931,6 @@ footer {
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: 4px
-  }
-
-  .menu>li:nth-child(4),
-  .menu>li:nth-child(5) {
-    display: none
   }
 
   .banner {
@@ -4488,5 +4483,382 @@ body.modal-open {
   .company-auth-shell .auth-form-view {
     padding: 22px 18px 20px !important;
     overflow-y: auto !important;
+  }
+}
+
+
+/* =========================================================
+   QUEM SOMOS — EQUIPE ITECHUB
+   ========================================================= */
+.team-page {
+  background: #f8fafc;
+  color: #172033;
+}
+
+.team-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #131b33 62%, #1d4ed8 150%);
+  color: #fff;
+  padding: 92px 7% 86px;
+}
+
+.team-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 50%;
+  right: -130px;
+  top: -180px;
+}
+
+.team-hero::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(59, 130, 246, .22);
+  border-radius: 50%;
+  left: -120px;
+  bottom: -150px;
+}
+
+.team-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.team-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.team-hero .team-eyebrow {
+  color: #93c5fd;
+}
+
+.team-hero h1 {
+  max-width: 760px;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -.045em;
+  margin: 0 0 22px;
+}
+
+.team-hero h1 span {
+  color: #60a5fa;
+}
+
+.team-hero-copy>p {
+  max-width: 690px;
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.team-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.team-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .06);
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.team-about {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 88px 24px;
+}
+
+.team-section-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.team-section-heading h2,
+.team-project h2,
+.team-closing h2 {
+  margin: 0;
+  color: #172033;
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -.035em;
+  line-height: 1.08;
+}
+
+.team-section-heading p {
+  color: #64748b;
+  line-height: 1.7;
+  margin: 14px auto 0;
+  max-width: 650px;
+}
+
+.developers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.developer-card {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, .08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, .12);
+}
+
+.developer-photo {
+  aspect-ratio: 4/3;
+  background: linear-gradient(145deg, #eef4ff, #e2e8f0);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.developer-photo::after {
+  content: "ADICIONAR FOTO";
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, .72);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.developer-photo span {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #2563eb;
+  font-size: 30px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .10);
+}
+
+.developer-info {
+  padding: 19px 20px 22px;
+}
+
+.developer-info h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 19px;
+}
+
+.developer-info p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.photo-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 13px;
+  margin: 28px 0 0;
+}
+
+.team-project {
+  background: #eef4ff;
+  padding: 86px 24px;
+}
+
+.team-project-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.team-project p {
+  color: #64748b;
+  line-height: 1.75;
+  max-width: 650px;
+}
+
+.team-values {
+  display: grid;
+  gap: 14px;
+}
+
+.team-values>div {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  column-gap: 14px;
+  padding: 18px;
+  border: 1px solid #dbe5f5;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.team-values i {
+  grid-row: span 2;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.team-values strong {
+  align-self: end;
+  color: #172033;
+}
+
+.team-values span {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.team-closing {
+  text-align: center;
+  padding: 86px 24px;
+  background: #fff;
+}
+
+.team-closing p {
+  max-width: 600px;
+  margin: 14px auto 26px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.team-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 20px;
+  border-radius: 11px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, .22);
+  transition: .2s ease;
+}
+
+.team-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+@media(max-width:900px) {
+
+  .team-hero-inner,
+  .team-project-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .team-hero {
+    padding: 70px 24px;
+  }
+
+  .team-hero-card {
+    min-height: auto;
+  }
+
+  .developers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px) {
+  .team-hero {
+    padding: 55px 20px 62px;
+  }
+
+  .team-hero h1 {
+    font-size: 40px;
+  }
+
+  .team-hero-copy>p {
+    font-size: 15px;
+  }
+
+  .team-hero-points {
+    display: grid;
+  }
+
+  .team-hero-points span {
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .team-about {
+    padding: 64px 18px;
+  }
+
+  .developers-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .developer-photo {
+    aspect-ratio: 16/10;
+  }
+
+  .team-project {
+    padding: 64px 18px;
+  }
+
+  .team-closing {
+    padding: 64px 18px;
+  }
+
+  .photo-note {
+    text-align: center;
+    line-height: 1.5;
   }
 }
