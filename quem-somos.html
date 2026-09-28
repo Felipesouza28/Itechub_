@@ -11,7 +11,6 @@
 </head>
 
 <body class="team-page">
-
   <header class="site-header">
     <a class="brand" href="index.html"><img class="logo" src="img/itechhub-logo.png" alt="Itechub"></a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu">
@@ -68,45 +67,51 @@
 
       <div class="developers-grid">
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-lucca.jpeg" alt="Foto do desenvolvedor Lucca"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 01</h3>
-            <p>Integrante da equipe</p>
+            <h3>Lucca Eustaquio</h3>
+            <p>Desenvolvedor 1</p>
           </div>
         </article>
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-thiago.jpeg" alt="Foto do desenvolvedor Thiago"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 02</h3>
-            <p>Integrante da equipe</p>
+            <h3>Thiago de Souza</h3>
+            <p>Desenvolvedor 02</p>
           </div>
         </article>
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-wesley.jpeg" alt="Foto do desenvolvedor Wesley"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 03</h3>
-            <p>Integrante da equipe</p>
+            <h3>Wesley Batista</h3>
+            <p>Desenvolvedor 03</p>
           </div>
         </article>
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-elisson.jpeg" alt="Foto do desenvolvedor Elisson"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 04</h3>
-            <p>Integrante da equipe</p>
+            <h3>Elissom Rodrigues</h3>
+            <p>Desenvolvedor 04</p>
           </div>
         </article>
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-felipe.jpeg" alt="Foto do desenvolvedor Felipe"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 05</h3>
-            <p>Integrante da equipe</p>
+            <h3>Felipe de Souza</h3>
+            <p>Desenvolvedor 05</p>
           </div>
         </article>
         <article class="developer-card">
-          <div class="developer-photo"><span><i class="fa-solid fa-user"></i></span></div>
+          <div class="developer-photo"><img src="img/img-davi.jpeg" alt="Foto do desenvolvedor Davi"
+              onerror="this.classList.add('image-error')"></div>
           <div class="developer-info">
-            <h3>Desenvolvedor 06</h3>
-            <p>Integrante da equipe</p>
+            <h3>Davi Lemos</h3>
+            <p>Desenvolvedor 06</p>
           </div>
         </article>
       </div>
@@ -144,8 +149,7 @@
 
   <footer>
     <div class="footer-grid">
-      <div class="footer-brand">
-        <img class="logo" src="img/itechhub-logo.png" alt="Itechub">
+      <div class="footer-brand"><img class="logo" src="img/itechhub-logo.png" alt="Itechub">
         <p>A plataforma que conecta clientes a assistências técnicas, facilitando a pesquisa, comparação e escolha.</p>
       </div>
       <div class="footer-col">
@@ -173,8 +177,66 @@
     </div>
     <p class="direitos-footer">© 2026 Itechub. Projeto acadêmico demonstrativo.</p>
   </footer>
-
   <script src="JavaScript/site.js"></script>
+
+  <style>
+    /* Ajustes específicos das fotos da equipe */
+    .developer-photo {
+      overflow: hidden;
+    }
+
+    .developer-photo img {
+      width: 280px;
+      height: 280px;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .developer-photo img.image-error {
+      display: none;
+    }
+
+    .developer-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      align-content: center;
+      gap: 10px;
+      color: #2563eb;
+      background: linear-gradient(145deg, #eef4ff, #e2e8f0);
+    }
+
+    .developer-placeholder i {
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #fff;
+      color: #2563eb;
+      font-size: 30px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .10);
+    }
+
+    .developer-placeholder span {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, .72);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    @media (max-width: 600px) {
+      .developer-placeholder {
+        min-height: 170px;
+      }
+    }
+  </style>
 </body>
 
 </html>
